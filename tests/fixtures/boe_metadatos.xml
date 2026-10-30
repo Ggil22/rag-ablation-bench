@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+  <status><code>200</code><text>ok</text></status>
+  <data>
+    <metadatos>
+      <identificador>BOE-A-2000-1</identificador>
+      <rango codigo="1300">Ley</rango>
+      <titulo>Ley 1/2000, de prueba.</titulo>
+      <url_html_consolidada>https://www.boe.es/buscar/act.php?id=BOE-A-2000-1</url_html_consolidada>
+    </metadatos>
+  </data>
+</response>

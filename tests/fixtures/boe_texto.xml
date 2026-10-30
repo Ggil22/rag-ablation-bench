@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Minimal consolidated law reproducing every quirk found in the real BOE data. -->
+<response>
+  <status><code>200</code><text>ok</text></status>
+  <data>
+    <texto>
+      <bloque id="preambulo" tipo="preambulo">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="parrafo">Exposición de motivos de la ley.</p>
+        </version>
+      </bloque>
+      <!-- Annex classes used for a bare title, with no annex body. -->
+      <bloque id="texto" tipo="encabezado" titulo="TEXTO">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="anexo">TEXTO REFUNDIDO DE LA LEY DE PRUEBA</p>
+        </version>
+      </bloque>
+      <bloque id="ti" tipo="encabezado" titulo="TÍTULO I">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="titulo_num">TÍTULO I</p>
+          <p class="titulo_tit">Disposiciones generales</p>
+        </version>
+      </bloque>
+      <bloque id="ci" tipo="encabezado" titulo="CAPÍTULO I">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="capitulo_num">CAPÍTULO I</p>
+          <p class="capitulo_tit">Objeto</p>
+        </version>
+      </bloque>
+      <!-- Three versions: the corpus must pick the one in force on as_of. -->
+      <bloque id="a1" tipo="precepto" titulo="Artículo 1">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="articulo">Artículo 1. Plazo.</p>
+          <p class="parrafo">El plazo es de diez días.</p>
+        </version>
+        <version id_norma="BOE-A-2010-5" fecha_publicacion="20100101" fecha_vigencia="20100201">
+          <p class="articulo">Artículo 1. Plazo.</p>
+          <p class="parrafo">1. El plazo es de quince días.</p>
+          <p class="parrafo">2. El plazo se computa en días hábiles.</p>
+          <blockquote>
+            <p class="nota_pie">Se modifica por la Ley 5/2010.</p>
+            <p class="cita_con_pleca">Redacción anterior:</p>
+            <p class="parrafo">El plazo es de diez días.</p>
+          </blockquote>
+        </version>
+        <version id_norma="BOE-A-2030-9" fecha_publicacion="20300101" fecha_vigencia="20300201">
+          <p class="articulo">Artículo 1. Plazo.</p>
+          <p class="parrafo">El plazo es de veinte días.</p>
+        </version>
+      </bloque>
+      <!-- A heading tagged as "precepto". -->
+      <bloque id="s1" tipo="precepto" titulo="Sección 1">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="seccion">Sección 1.ª Cuantías</p>
+        </version>
+      </bloque>
+      <!-- A table, and a published amendment with no effective date yet. -->
+      <bloque id="a2" tipo="precepto" titulo="Artículo 2">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="articulo">Artículo 2. Escala.</p>
+          <table class="tabla">
+            <thead><tr><th class="cabeza_tabla">Base</th><th class="cabeza_tabla">Tipo</th></tr></thead>
+            <tbody>
+              <tr><td class="cuerpo_tabla_izq">Hasta 12.450</td><td>9,50</td></tr>
+              <tr><td class="cuerpo_tabla_izq">Resto</td><td>12,00</td></tr>
+            </tbody>
+          </table>
+        </version>
+        <version id_norma="BOE-A-2020-3" fpub="" fecha_publicacion="20200301" fecha_vigencia="">
+          <p class="articulo">Artículo 2. Escala.</p>
+          <p class="parrafo">Escala pendiente de entrada en vigor.</p>
+        </version>
+      </bloque>
+      <!-- Did not exist yet on as_of. -->
+      <bloque id="a3" tipo="precepto" titulo="Artículo 3">
+        <version id_norma="BOE-A-2030-9" fecha_publicacion="20300101" fecha_vigencia="20300201">
+          <p class="articulo">Artículo 3. Futuro.</p>
+          <p class="parrafo">Texto futuro.</p>
+        </version>
+      </bloque>
+      <bloque id="a4" tipo="precepto" titulo="Artículo 4">
+        <version id_norma="BOE-A-2010-5" fecha_publicacion="20100101" fecha_vigencia="20100201">
+          <p class="articulo">Artículo 4. Derogado.</p>
+          <p class="parrafo">(Derogado)</p>
+        </version>
+      </bloque>
+      <!-- Provisions follow the last article with no heading block. -->
+      <bloque id="daprimera" tipo="precepto" titulo="Disposición adicional primera">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="articulo">Disposición adicional primera. Régimen especial.</p>
+          <p class="parrafo">Se aplicará un régimen especial.</p>
+        </version>
+      </bloque>
+      <!-- An annex replaced by a newer one: expired blocks must be dropped. -->
+      <bloque id="an" tipo="encabezado" fecha_caducidad="20150101" titulo="ANEXO">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="anexo_num">ANEXO</p>
+          <p class="parrafo">Modelo antiguo de formulario.</p>
+        </version>
+      </bloque>
+      <bloque id="ai" tipo="encabezado" titulo="ANEXO I">
+        <version id_norma="BOE-A-2014-2" fecha_publicacion="20141201" fecha_vigencia="20150101">
+          <p class="anexo_num">ANEXO I</p>
+          <p class="anexo_tit">Formulario</p>
+          <p class="parrafo">Modelo vigente de formulario.</p>
+        </version>
+      </bloque>
+      <bloque id="firma" tipo="firma">
+        <version id_norma="BOE-A-2000-1" fecha_publicacion="20000101" fecha_vigencia="20000102">
+          <p class="firma_rey">FELIPE R.</p>
+        </version>
+      </bloque>
+    </texto>
+  </data>
+</response>

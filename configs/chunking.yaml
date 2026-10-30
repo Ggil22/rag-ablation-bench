@@ -1,0 +1,31 @@
+# Chunking configurations compared in the ablation. Sizes are in words.
+#
+# fixed:      sliding window over the whole document, blind to structure (baseline).
+# recursive:  splits on paragraphs, then sentences, then words, and packs pieces up to
+#             `size`; may merge short neighbouring articles into one chunk.
+# structure:  one chunk per article/provision; long ones are split at numbered
+#             sub-sections ("1.", "2.", ...) and every piece keeps the article's header.
+#
+# Semantic chunking needs an embedding model and is added together with dense retrieval.
+
+fixed-128:
+  strategy: fixed
+  size: 128
+  overlap: 16
+fixed-256:
+  strategy: fixed
+  size: 256
+  overlap: 32
+fixed-512:
+  strategy: fixed
+  size: 512
+  overlap: 64
+recursive-256:
+  strategy: recursive
+  size: 256
+recursive-512:
+  strategy: recursive
+  size: 512
+structure-512:
+  strategy: structure
+  size: 512

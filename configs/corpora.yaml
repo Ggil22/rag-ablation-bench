@@ -1,0 +1,19 @@
+# Source documents for each corpus.
+
+boe:
+  # Consolidated laws keep every historical version of each article. The corpus uses the
+  # wording in force on this date, so it does not change when the BOE publishes amendments.
+  as_of: "2026-10-30"
+  laws:
+    - id: BOE-A-2015-11430
+      short: ET          # Estatuto de los Trabajadores
+    - id: BOE-A-2015-10565
+      short: LPAC        # Procedimiento Administrativo Común
+    - id: BOE-A-2006-20764
+      short: LIRPF       # Impuesto sobre la Renta de las Personas Físicas
+    - id: BOE-A-1994-26003
+      short: LAU         # Arrendamientos Urbanos
+    - id: BOE-A-2007-20555
+      short: TRLGDCU     # Defensa de los Consumidores y Usuarios
+    - id: BOE-A-2018-16673
+      short: LOPDGDD     # Protección de Datos Personales
