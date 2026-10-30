@@ -226,6 +226,8 @@ def cmd_gen_questions(args: argparse.Namespace) -> None:
             f"{kind:<14} {stats.requested[kind]:>9} {stats.kept[kind]:>5} "
             f"{stats.skipped[kind]:>8} {stats.misquoted[kind]:>10} {stats.failed[kind]:>7}"
         )
+    if stats.stopped:
+        print(f"\nStopped early: {stats.stopped}\nRerun later: cached answers are reused.")
     print(f"\n{len(rows)} candidates in {args.out}. Review them with `rab review {args.out}`.")
 
 

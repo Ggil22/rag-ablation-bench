@@ -177,9 +177,9 @@ def write_report(
         "questions. Accuracy: correct = 1, partial = 0.5, correct abstention = 1; mean with "
         "95% bootstrap interval.",
         "",
-        "| Pipeline | Accuracy | Correct (answerable) | Hallucinated (unanswerable) | "
+        "| Pipeline | n | Accuracy | Correct (answerable) | Hallucinated (unanswerable) | "
         "False abstention | Faithful | Context recall | p50 / p95 latency | Tokens / query |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "|---|---|---|---|---|---|---|---|---|---|",
     ]
     for p in order:
         g = by_pipe[p]
@@ -196,7 +196,7 @@ def write_report(
         )
         cost_txt = f" (${cost * 1000:.2f} / 1k queries)" if cost is not None else ""
         lines.append(
-            f"| `{p}` | {acc[0]:.2f} [{acc[1]:.2f}, {acc[2]:.2f}] "
+            f"| `{p}` | {len(g)} | {acc[0]:.2f} [{acc[1]:.2f}, {acc[2]:.2f}] "
             f"| {_pct([r['outcome'] == 'correct' for r in ans])} "
             f"| {_pct([r['outcome'] == 'hallucinated' for r in un])} "
             f"| {_pct([r['outcome'] == 'false_abstention' for r in ans])} "
@@ -212,16 +212,20 @@ def write_report(
             "",
             "Paired over the same questions; **bold** when the 95% interval excludes zero.",
             "",
-            "| Pipeline | Δ accuracy |",
-            "|---|---|",
+            "| Pipeline | Δ accuracy | Questions |",
+            "|---|---|---|",
         ]
-        base = [r["score"] for r in by_pipe[baseline]]
+        base = {r["qid"]: r["score"] for r in by_pipe[baseline]}
         for p in order:
             if p == baseline:
                 continue
-            mean, lo, hi = paired_diff_ci([r["score"] for r in by_pipe[p]], base)
+            # Only questions both pipelines have answered (and the judge has scored).
+            mine = {r["qid"]: r["score"] for r in by_pipe[p]}
+            common = sorted(mine.keys() & base.keys())
+            mean, lo, hi = paired_diff_ci([mine[q] for q in common], [base[q] for q in common])
             cell = f"{mean:+.2f} [{lo:+.2f}, {hi:+.2f}]"
-            lines.append(f"| `{p}` | {f'**{cell}**' if lo > 0 or hi < 0 else cell} |")
+            bold = f"**{cell}**" if lo > 0 or hi < 0 else cell
+            lines.append(f"| `{p}` | {bold} | {len(common)} |")
 
     lines += [
         "",

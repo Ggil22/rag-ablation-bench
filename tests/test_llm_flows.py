@@ -362,3 +362,51 @@ def test_label_and_agreement(tmp_path):
     text = agreement(rows, labels)
     assert text.startswith("2 answers labelled by hand")
     assert agreement(rows, {}) is None
+
+
+# --- Provider errors -----------------------------------------------------------------------------
+
+
+def _client_raising(exc):
+    from types import SimpleNamespace
+
+    def create(**kwargs):
+        raise exc
+
+    return SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+
+
+def _api_error(cls, status: int, message: str):
+    import httpx
+
+    response = httpx.Response(status, request=httpx.Request("POST", "http://test"))
+    return cls(message, response=response, body=None)
+
+
+def test_invalid_json_from_provider_is_unparseable_output(monkeypatch):
+    import openai
+
+    from rag_ablation_bench.llm import LLM
+
+    llm = LLM(ModelConfig("m", "p", "m", "http://test", None), cache_dir=None)
+    llm._client = _client_raising(
+        _api_error(openai.BadRequestError, 400, "Failed to validate JSON")
+    )
+    with pytest.raises(ValueError):
+        llm.ask_json("s", "u")
+
+
+def test_daily_quota_is_not_retried(monkeypatch):
+    import openai
+
+    from rag_ablation_bench import llm as llm_module
+
+    slept = []
+    monkeypatch.setattr(llm_module.time, "sleep", slept.append)
+    llm = llm_module.LLM(ModelConfig("m", "p", "m", "http://test", None), cache_dir=None)
+    llm._client = _client_raising(
+        _api_error(openai.RateLimitError, 429, "Rate limit reached on tokens per day (TPD)")
+    )
+    with pytest.raises(QuotaExhausted):
+        llm.ask_json("s", "u")
+    assert slept == []  # gave up at once instead of backing off

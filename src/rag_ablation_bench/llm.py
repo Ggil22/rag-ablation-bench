@@ -186,6 +186,13 @@ class LLM:
             start = time.perf_counter()
             try:
                 completion = self._client.chat.completions.create(**payload)
+            except openai.BadRequestError as exc:
+                # Providers that enforce JSON mode reject output that is not valid JSON
+                # (Groq: "Failed to validate JSON"). That is a bad answer, not a bad request:
+                # callers count it like any other unparseable output.
+                if "json" in str(exc).lower():
+                    raise ValueError(f"{self.cfg.name}: invalid JSON output") from exc
+                raise
             except retryable as exc:
                 if _is_daily_quota(exc):
                     raise QuotaExhausted(f"{self.cfg.name}: {exc}") from exc

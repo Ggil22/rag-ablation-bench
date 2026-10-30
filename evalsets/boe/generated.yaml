@@ -1,0 +1,1689 @@
+- id: gen-001
+  question: ¿Dónde se debe celebrar la reunión de los trabajadores?
+  answer: En el centro de trabajo, siempre que las condiciones lo permitan.
+  type: lookup
+  evidence:
+  - ref: ET#a78
+    quote: El lugar de reunión será el centro de trabajo, si las condiciones del mismo lo permiten, y
+      la misma tendrá lugar fuera de las horas de trabajo, salvo acuerdo con el empresario.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-002
+  question: ¿Qué porcentaje de reducción se aplica a la ganancia patrimonial si el activo fue adquirido
+    hace 10 años?
+  answer: 74 %
+  type: numeric
+  evidence:
+  - ref: LIRPF#daseptima
+    quote: Más de diez años | 74 por ciento.
+  lexical_overlap: 0.1
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-003
+  question: ¿Cómo se determina el precio que me corresponde si la vivienda se vende junto con otras propiedades?
+  answer: Se calcula proporcionalmente del precio total de venta, basándose en el valor catastral o, si
+    no, en una tasación independiente.
+  type: lookup
+  evidence:
+  - ref: LAU#a25
+    quote: A estos efectos, el precio imputable a la vivienda arrendada será el que resulte de la distribución
+      proporcional del precio global de venta conforme a criterios objetivos y verificables, atendiendo
+      preferentemente al valor de referencia catastral o, en su defecto, a tasación independiente.
+  lexical_overlap: 0.286
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-004
+  question: ¿Puedo evitar una sanción grave si corrijo la infracción antes de que se inicie el procedimiento
+    sancionador?
+  answer: Sí, si corrige diligentemente las irregularidades antes de que se inicie el procedimiento y
+    no ha causado perjuicios directos, devolvió voluntariamente las cantidades cobradas, colaboró activamente
+    para evitar o disminuir los efectos de la infracción u observó espontáneamente cualquier otro comportamiento
+    de análogo significado, la infracción se considerará leve o grave en lugar de grave o muy grave.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a48
+    quote: Las infracciones que, de acuerdo con los apartados anteriores, merezcan en principio la calificación
+      de grave o muy grave se considerarán respectivamente como leve o grave si antes de iniciarse el
+      procedimiento sancionador el responsable corrigiera diligentemente las irregularidades en que consista
+      la infracción siempre que no haya causado perjuicios directos, devolviera voluntariamente las cantidades
+      cobradas, colaborara activamente para evitar o disminuir los efectos de la infracción u observara
+      espontáneamente cualquier otro comportamiento de análogo significado.
+  lexical_overlap: 0.75
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-005
+  question: ¿Cuánto tiempo tiene el responsable del tratamiento para responder a una reclamación si no
+    hay delegado de protección de datos ni mecanismos de resolución extrajudicial?
+  answer: Un mes.
+  type: numeric
+  evidence:
+  - ref: LOPDGDD#a6-7
+    quote: en cuyo caso el responsable o encargado deberá dar respuesta a la reclamación en el plazo de
+      un mes.
+  lexical_overlap: 0.133
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-006
+  question: ¿Qué porcentaje de descuento obtienen las empresas que firman contratos formativos con trabajadores
+    con discapacidad?
+  answer: 50%
+  type: numeric
+  evidence:
+  - ref: ET#davigesima
+    quote: del cincuenta por ciento de la cuota empresarial de la Seguridad Social correspondiente a contingencias
+      comunes
+  lexical_overlap: 0.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-007
+  question: ¿Qué debe hacerse antes de redactar un proyecto de ley o reglamento?
+  answer: Se debe realizar una consulta pública a través del portal web de la Administración competente.
+  type: lookup
+  evidence:
+  - ref: LPAC#a133
+    quote: 'Con carácter previo a la elaboración del proyecto o anteproyecto de ley o de reglamento, se
+      sustanciará una consulta pública, a través del portal web de la Administración competente en la
+      que se recabará la opinión de los sujetos y de las organizaciones más representativas potencialmente
+      afectados por la futura norma acerca de:'
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-008
+  question: ¿Cuánto puedo deducir por las primas de seguro de enfermedad de mi cónyuge?
+  answer: 500 euros por cada persona, 1.500 euros si tiene discapacidad.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a30
+    quote: El límite máximo de deducción será de 500 euros por cada una de las personas señaladas anteriormente
+      o de 1.500 euros por cada una de ellas con discapacidad.
+  lexical_overlap: 0.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-009
+  question: ¿Qué datos deben incluirse en el contrato de arrendamiento cuando se formaliza por escrito?
+  answer: La identidad de los contratantes, la identificación de la finca arrendada, la duración pactada,
+    la renta inicial y las demás cláusulas acordadas.
+  type: lookup
+  evidence:
+  - ref: LAU#a37
+    quote: En este caso, se hará constar la identidad de los contratantes, la identificación de la finca
+      arrendada, la duración pactada, la renta inicial del contrato y las demás cláusulas que las partes
+      hubieran libremente acordado.
+  lexical_overlap: 0.286
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-010
+  question: ¿En qué momento pasa el riesgo de los productos que compro a la empresa?
+  answer: Cuando el empresario te entregue los bienes y tú los tomes en posesión, o cuando los entregues
+    a un transportista que no sea el propuesto por el empresario.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a66ter
+    quote: Cuando el empresario envíe al consumidor y usuario los bienes comprados, el riesgo de pérdida
+      o deterioro de éstos se transmitirá al consumidor y usuario cuando él o un tercero por él indicado,
+      distinto del transportista, haya adquirido su posesión material.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-011
+  question: ¿Se pueden incluir datos de condenas penales en los registros de personal del sector público?
+  answer: Sí, pero solo los datos estrictamente necesarios para el cumplimiento de sus fines.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#da-12
+    quote: Los registros de personal del sector público podrán tratar datos personales relativos a infracciones
+      y condenas penales e infracciones y sanciones administrativas, limitándose a los datos estrictamente
+      necesarios para el cumplimiento de sus fines.
+  lexical_overlap: 0.778
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-012
+  question: ¿Qué información pueden consultar la Tesorería General de la Seguridad Social, el Servicio
+    Público de Empleo Estatal y la Inspección de Trabajo y Seguridad Social sobre los expedientes de regulación
+    temporal de empleo?
+  answer: Datos de identificación y tipo del expediente, de la empresa y de los trabajadores, el tipo
+    de medida, el período de reducción o suspensión y el porcentaje máximo de reducción o periodo máximo
+    de suspensión.
+  type: lookup
+  evidence:
+  - ref: ET#da-5
+    quote: La Tesorería General de la Seguridad Social, el Servicio Público de Empleo Estatal y la Inspección
+      de Trabajo y Seguridad Social tendrán acceso, a través de los procedimientos automatizados que se
+      establezcan, a todos los datos necesarios para la identificación y tipo del expediente de regulación
+      temporal de empleo, de la empresa y de las personas trabajadoras incluidas en el expediente, el
+      tipo de medida a aplicar, el período en el que se puede producir la reducción de jornada de trabajo
+      o suspensión de los contratos de trabajo y el porcentaje máximo de reducción de jornada o periodo
+      máximo de suspensión de contrato previsto respecto de cada persona trabajadora.
+  lexical_overlap: 0.875
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-013
+  question: ¿Cómo se contabiliza la presentación de un documento en el registro electrónico cuando se
+    envía durante un día inhábil?
+  answer: Se considera presentada en la primera hora del primer día hábil siguiente.
+  type: lookup
+  evidence:
+  - ref: LPAC#a31
+    quote: A los efectos del cómputo de plazo fijado en días hábiles, y en lo que se refiere al cumplimiento
+      de plazos por los interesados, la presentación en un día inhábil se entenderá realizada en la primera
+      hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día
+      inhábil.
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-014
+  question: ¿Puedo solicitar el abono anticipado de la deducción por familia numerosa?
+  answer: Sí, puedes solicitarlo y no se reducirá la cuota diferencial del impuesto.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a81bis
+    quote: Se podrá solicitar a la Agencia Estatal de Administración Tributaria el abono de las deducciones
+      de forma anticipada. En estos supuestos, no se minorará la cuota diferencial del impuesto.
+  lexical_overlap: 0.571
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-015
+  question: ¿Cuándo se presentará el proyecto de ley que otorgará beneficios fiscales a los arrendadores
+    con contratos anteriores al 9 de mayo de 1985?
+  answer: Un año después de la entrada en vigor de la ley.
+  type: numeric
+  evidence:
+  - ref: LAU#dfcuaa
+    quote: El Gobierno procederá, transcurrido un año a contar desde la entrada en vigor de la ley, a
+      presentar a las Cortes Generales un proyecto de ley mediante el que se arbitre un sistema de beneficios
+      fiscales para compensar a los arrendadores, en contratos celebrados con anterioridad al 9 de mayo
+      de 1985 que subsistan a la entrada en vigor de la ley, mientras el contrato siga en vigor, cuando
+      tales arrendadores no disfruten del derecho a la revisión de la renta del contrato por aplicación
+      de la regla 7.ª del apartado 11 de la disposición transitoria segunda de esta ley.
+  lexical_overlap: 0.917
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-016
+  question: ¿Cuánto tiempo tiene un consumidor para reclamar al responsable después de que el productor
+    haya solucionado el problema?
+  answer: Un año.
+  type: numeric
+  evidence:
+  - ref: TRLGDCU#a125
+    quote: Quien haya respondido frente al consumidor o usuario dispondrá del plazo de un año para repetir
+      frente al responsable de la falta de conformidad. Dicho plazo se computará a partir del momento
+      en que se ejecutó la medida correctora.
+  lexical_overlap: 0.3
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-017
+  question: ¿Qué pasa con el Estatuto de la Agencia Española de Protección de Datos cuando entra en vigor
+    la nueva ley?
+  answer: El Estatuto seguirá vigente siempre que no contradiga lo establecido en el Título VIII de la
+    nueva ley.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#dt
+    quote: El Estatuto de la Agencia Española de Protección de Datos, aprobado por Real Decreto 428/1993,
+      de 26 de marzo, continuará vigente en lo que no se oponga a lo establecido en el Título VIII de
+      esta ley orgánica.
+  lexical_overlap: 0.6
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-018
+  question: ¿Con qué frecuencia debe recibir el comité de empresa información sobre la evolución económica
+    de la empresa?
+  answer: Trimestralmente.
+  type: lookup
+  evidence:
+  - ref: ET#a64
+    quote: 'El comité de empresa tendrá derecho a ser informado trimestralmente:'
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-019
+  question: ¿Puedo ser obligado a pagar una deuda que no esté prevista por una ley?
+  answer: No, no puede imponerse una obligación pecuniaria sin que exista una norma legal que la establezca.
+  type: lookup
+  evidence:
+  - ref: LPAC#a101
+    quote: En cualquier caso no podrá imponerse a los administrados una obligación pecuniaria que no estuviese
+      establecida con arreglo a una norma de rango legal.
+  lexical_overlap: 0.286
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-020
+  question: ¿Cuál es la cantidad máxima que puedo reinvertir en la Cuenta de Ahorro e Inversión Financia
+    Europa Reinversión?
+  answer: 800.000 euros
+  type: numeric
+  evidence:
+  - ref: LIRPF#da-19
+    quote: La cantidad máxima total que podrá reinvertirse en la Cuenta de Ahorro e Inversión Financia
+      Europa Reinversión será de 800.000 euros.
+  lexical_overlap: 0.9
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-021
+  question: ¿Cuándo se establecerán los requisitos para registrar un contrato de arrendamiento en el Registro
+    de la Propiedad?
+  answer: En nueve meses desde la entrada en vigor de la ley.
+  type: numeric
+  evidence:
+  - ref: LAU#dasegunda
+    quote: En el plazo de nueve meses desde la entrada en vigor de esta ley se establecerán reglamentariamente
+      los requisitos de acceso de los contratos de arrendamientos urbanos al Registro de la Propiedad.
+  lexical_overlap: 1.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-022
+  question: ¿Qué tipo de asociaciones de consumidores están reguladas por esta norma?
+  answer: Las asociaciones de consumidores y usuarios de ámbito supraautonómico.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a22
+    quote: el régimen básico de las asociaciones de consumidores y la regulación específica a la que quedan
+      sometidas las asociaciones de consumidores y usuarios de ámbito supraautonómico.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-023
+  question: ¿Cuándo se vuelven obligatorias las circulares de la Agencia Española de Protección de Datos?
+  answer: Una vez publicadas en el Boletín Oficial del Estado.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a5-7
+    quote: Las circulares serán obligatorias una vez publicadas en el Boletín Oficial del Estado.
+  lexical_overlap: 0.286
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-024
+  question: ¿Puede el empleador obligar a un trabajador a hacerse un reconocimiento médico para justificar
+    una ausencia?
+  answer: Sí, el empleador puede solicitar un reconocimiento médico y la negativa puede conllevar la suspensión
+    de los derechos económicos.
+  type: lookup
+  evidence:
+  - ref: ET#a20
+    quote: El empresario podrá verificar el estado de salud del trabajador que sea alegado por este para
+      justificar sus faltas de asistencia al trabajo, mediante reconocimiento a cargo de personal médico.
+      La negativa del trabajador a dichos reconocimientos podrá determinar la suspensión de los derechos
+      económicos que pudieran existir a cargo del empresario por dichas situaciones.
+  lexical_overlap: 0.444
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-025
+  question: ¿Puedo presentar mis documentos en la oficina de Correos?
+  answer: Sí, puedes presentarlos en las oficinas de Correos, según la forma que la normativa establezca.
+  type: lookup
+  evidence:
+  - ref: LPAC#a16
+    quote: En las oficinas de Correos, en la forma que reglamentariamente se establezca.
+  lexical_overlap: 0.4
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-026
+  question: ¿Hasta cuánto puedo compensar una pérdida patrimonial negativa con mis ingresos positivos
+    en el mismo año fiscal?
+  answer: Con un límite del 25 % del saldo positivo de los rendimientos.
+  type: numeric
+  evidence:
+  - ref: LIRPF#a48
+    quote: Si el resultado de la integración y compensación a que se refiere este párrafo arrojase saldo
+      negativo, su importe se compensará con el saldo positivo de las rentas previstas en el párrafo a)
+      de este artículo, obtenido en el mismo período impositivo, con el límite del 25 por ciento de dicho
+      saldo positivo.
+  lexical_overlap: 0.364
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-027
+  question: ¿Quién debe declarar la situación de minusvalía y su grado?
+  answer: Los centros y servicios de las Administraciones Públicas competentes.
+  type: lookup
+  evidence:
+  - ref: LAU#danovena
+    quote: A los efectos prevenidos en esta ley, la situación de minusvalía y su grado deberán ser declarados,
+      de acuerdo con la normativa vigente, por los centros y servicios de las Administraciones Públicas
+      competentes.
+  lexical_overlap: 1.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-028
+  question: ¿Cuántas noches de alojamiento me cubrirá el organizador si no puedo volver a casa por causas
+    extraordinarias?
+  answer: Hasta tres noches.
+  type: numeric
+  evidence:
+  - ref: TRLGDCU#a161
+    quote: el organizador o, en su caso, el minorista asumirán el coste del alojamiento que sea necesario,
+      de ser posible de categoría equivalente, por un período no superior a tres noches por viajero.
+  lexical_overlap: 0.455
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-029
+  question: ¿Con qué frecuencia se celebran las reuniones de cooperación entre la Agencia Española de
+    Protección de Datos y las autoridades autonómicas?
+  answer: se celebran reuniones semestrales.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a5-10
+    quote: En todo caso, se celebrarán reuniones semestrales de cooperación.
+  lexical_overlap: 0.3
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-030
+  question: ¿Cuánto tiempo tengo para reclamar al Fondo de Garantía Salarial después de que se reconozca
+    mi deuda salarial?
+  answer: Un año.
+  type: numeric
+  evidence:
+  - ref: ET#a33
+    quote: El derecho a solicitar del Fondo de Garantía Salarial el pago de las prestaciones que resultan
+      de los apartados anteriores prescribirá al año de la fecha del acto de conciliación, sentencia,
+      auto o resolución de la autoridad laboral en que se reconozca la deuda por salarios o se fijen las
+      indemnizaciones.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-031
+  question: ¿Cuánto tiempo debe pasar antes de que un sistema de identificación basado en certificados
+    electrónicos cualificados sea legalmente efectivo?
+  answer: Dos meses
+  type: numeric
+  evidence:
+  - ref: LPAC#a9
+    quote: De forma previa a la eficacia jurídica del sistema, habrán de transcurrir dos meses desde dicha
+      comunicación, durante los cuales el órgano estatal competente por motivos de seguridad pública podrá
+      acudir a la vía jurisdiccional, previo informe vinculante de la Secretaría de Estado de Seguridad,
+      que deberá emitir en el plazo de diez días desde su solicitud.
+  lexical_overlap: 0.167
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-032
+  question: Si uno de los cónyuges incurre en una deuda tributaria por el IRPF, ¿qué sucede con los bienes
+    comunes del matrimonio?
+  answer: Los bienes gananciales responderán directamente frente a la Hacienda Pública por esas deudas.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a106
+    quote: Las deudas tributarias y, en su caso, las sanciones tributarias, por el Impuesto sobre la Renta
+      de las Personas Físicas tendrán la misma consideración que las referidas en el artículo 1365 del
+      Código Civil y, en consecuencia, los bienes gananciales responderán directamente frente a la Hacienda
+      Pública por estas deudas, contraídas por uno de los cónyuges, sin perjuicio de lo previsto en el
+      apartado 6 del artículo 84 de esta ley para el caso de tributación conjunta.
+  lexical_overlap: 0.444
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-033
+  question: ¿Cuánto tiempo tiene la Administración autonómica para devolver la fianza después de que termine
+    el contrato?
+  answer: Un mes.
+  type: numeric
+  evidence:
+  - ref: LAU#datercera
+    quote: Si transcurrido un mes desde la finalización del contrato, la Administración autonómica o el
+      ente público competente no procediere a la devolución de la cantidad depositada, ésta devengará
+      el interés legal correspondiente.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-034
+  question: ¿Cuánto tiempo tiene el Ministerio de Industria, Comercio y Turismo para responder a una solicitud
+    de otro Estado miembro sobre la protección frente a la insolvencia?
+  answer: Quince días hábiles
+  type: numeric
+  evidence:
+  - ref: TRLGDCU#a1-2
+    quote: en un plazo máximo de quince días hábiles desde la recepción de la solicitud del punto de contacto
+      central
+  lexical_overlap: 0.077
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-035
+  question: ¿Qué medidas puede imponer la Agencia si considera que el tratamiento de datos personales
+    puede causar un grave menoscabo del derecho a la protección de datos?
+  answer: Puede ordenar el bloqueo de los datos y la cesación de su tratamiento, e inmovilizar si no se
+    cumplen.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a6-11
+    quote: En los casos en que la Agencia Española de Protección de Datos considere que la continuación
+      del tratamiento de los datos personales, su comunicación o transferencia internacional comportara
+      un menoscabo grave del derecho a la protección de datos personales, podrá ordenar a los responsables
+      o encargados de los tratamientos el bloqueo de los datos y la cesación de su tratamiento y, en caso
+      de incumplirse por estos dichos mandatos, proceder a su inmovilización.
+  lexical_overlap: 0.692
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-036
+  question: ¿Cuánto tiempo tiene la empresa para comunicar su decisión sobre el despido colectivo después
+    de la última reunión?
+  answer: Quince días.
+  type: numeric
+  evidence:
+  - ref: ET#a51
+    quote: Si en el plazo de quince días desde la fecha de la última reunión celebrada en el periodo de
+      consultas, el empresario no hubiera comunicado a los representantes de los trabajadores y a la autoridad
+      laboral su decisión sobre el despido colectivo, se producirá la caducidad del procedimiento de despido
+      colectivo en los términos que reglamentariamente se establezcan.
+  lexical_overlap: 0.6
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-037
+  question: ¿Qué ocurre si una administración publica dicta una resolución sin seguir el procedimiento
+    legal establecido?
+  answer: El acto será nulo de pleno derecho.
+  type: lookup
+  evidence:
+  - ref: LPAC#a47
+    quote: Los dictados prescindiendo total y absolutamente del procedimiento legalmente establecido o
+      de las normas que contienen las reglas esenciales para la formación de la voluntad de los órganos
+      colegiados.
+  lexical_overlap: 0.4
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-038
+  question: ¿Cuál es el porcentaje de retención que se aplica a los premios de juegos y concursos?
+  answer: 19 %
+  type: numeric
+  evidence:
+  - ref: LIRPF#a101
+    quote: El porcentaje de retención e ingreso a cuenta sobre los premios que se entreguen como consecuencia
+      de la participación en juegos, concursos, rifas o combinaciones aleatorias, estén o no vinculadas
+      a la oferta, promoción o venta de determinados bienes, productos o servicios, será del 19 por ciento.
+  lexical_overlap: 0.833
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-039
+  question: ¿Desde cuándo se aplican las nuevas medidas de alquiler en zonas tensionadas?
+  answer: Desde la entrada en vigor de la Ley 12/2023, de 24 de mayo.
+  type: lookup
+  evidence:
+  - ref: LAU#dt
+    quote: La regulación establecida en el apartado 7 del artículo 17 se aplicará a los contratos que
+      se formalicen desde la entrada en vigor de la Ley 12/2023, de 24 de mayo, por el derecho a la vivienda,
+      y una vez se encuentre aprobado el referido sistema de índices de precios de referencia, de acuerdo
+      con lo previsto en la disposición adicional primera de la Ley 12/2023, de 24 de mayo, por el derecho
+      a la vivienda y lo establecido en la disposición adicional segunda del Real Decreto-ley 7/2019,
+      de 1 de marzo, de medidas urgentes en materia de vivienda y alquiler.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-040
+  question: ¿Cuándo debe enviar el consumidor la comunicación de desistimiento?
+  answer: Antes de que termine el plazo de desistimiento.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a106
+    quote: Antes de que venza el plazo de desistimiento, el consumidor y usuario comunicará al empresario
+      su decisión de desistir del contrato.
+  lexical_overlap: 0.4
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-041
+  question: ¿Cuánto tiempo tengo para que se prescriba una infracción leve?
+  answer: Un año.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a7-6
+    quote: Se consideran leves y prescribirán al año las restantes infracciones de carácter meramente
+      formal
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-042
+  question: ¿Cuál es el máximo de horas complementarias que puedo pactar con mi empleador?
+  answer: El máximo es el treinta por ciento de las horas ordinarias.
+  type: numeric
+  evidence:
+  - ref: ET#a12
+    quote: El número de horas complementarias pactadas no podrá exceder del treinta por ciento de las
+      horas ordinarias de trabajo objeto del contrato.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-043
+  question: ¿Puedo apelar la decisión de acumular mi procedimiento con otro?
+  answer: No, no procede recurso.
+  type: lookup
+  evidence:
+  - ref: LPAC#a57
+    quote: Contra el acuerdo de acumulación no procederá recurso alguno.
+  lexical_overlap: 0.4
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-044
+  question: ¿Quiénes pueden hacer aportaciones a las mutualidades de previsión social?
+  answer: Profesionales no integrados en la Seguridad Social, sus cónyuges y familiares consanguíneos
+    en primer grado, y los trabajadores de las mutualidades.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a51
+    quote: Las cantidades abonadas en virtud de contratos de seguro concertados con mutualidades de previsión
+      social por profesionales no integrados en alguno de los regímenes de la Seguridad Social, por sus
+      cónyuges y familiares consanguíneos en primer grado, así como por los trabajadores de las citadas
+      mutualidades, en la parte que tenga por objeto la cobertura de las contingencias previstas en el
+      artículo 8.6 del texto refundido de la Ley de Regulación de los Planes y Fondos de Pensiones siempre
+      que no hayan tenido la consideración de gasto deducible para los rendimientos netos de actividades
+      económicas, en los términos que prevé el segundo párrafo de la regla 1.ª del artículo 30.2 de esta
+      Ley.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-045
+  question: Si el daño se produce por un defecto del producto y también por la intervención de un tercero,
+    ¿puede el responsable reclamar al tercero la parte correspondiente de la indemnización?
+  answer: Sí, el responsable puede reclamar al tercero la parte que corresponda a su intervención en la
+    producción del daño.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a133
+    quote: La responsabilidad prevista en este libro no se reducirá cuando el daño sea causado conjuntamente
+      por un defecto del bien o servicio y por la intervención de un tercero. No obstante, el sujeto responsable
+      que hubiera satisfecho la indemnización podrá reclamar al tercero la parte que corresponda a su
+      intervención en la producción del daño.
+  lexical_overlap: 0.667
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-046
+  question: ¿Puedo usar los datos de una condena para contratar un seguro?
+  answer: Solo si la ley lo permite.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a1-2
+    quote: El tratamiento de datos personales relativos a condenas e infracciones penales, así como a
+      procedimientos y medidas cautelares y de seguridad conexas, para fines distintos de los de prevención,
+      investigación, detección o enjuiciamiento de infracciones penales o de ejecución de sanciones penales,
+      solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho de la Unión, en
+      esta ley orgánica o en otras normas de rango legal.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-047
+  question: ¿El artículo 42.6 del Estatuto de los Trabajadores se aplica a las contratas y subcontratas
+    con centros especiales de empleo?
+  answer: No, no se aplica.
+  type: lookup
+  evidence:
+  - ref: ET#da-6
+    quote: no será de aplicación el artículo 42.6 del texto refundido de la Ley del Estatuto de los Trabajadores.
+  lexical_overlap: 0.545
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-048
+  question: ¿Puedo decidir si quiero usar medios electrónicos para comunicarme con la administración?
+  answer: Sí, puedes elegir, salvo que estés obligado a hacerlo.
+  type: lookup
+  evidence:
+  - ref: LPAC#a14
+    quote: Las personas físicas podrán elegir en todo momento si se comunican con las Administraciones
+      Públicas para el ejercicio de sus derechos y obligaciones a través de medios electrónicos o no,
+      salvo que estén obligadas a relacionarse a través de medios electrónicos con las Administraciones
+      Públicas.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-049
+  question: ¿Qué normas se aplican a las sociedades transparentes y patrimoniales en el impuesto sobre
+    la renta?
+  answer: Las disposiciones transitorias 15, 16 y 22 del texto refundido de la Ley del Impuesto sobre
+    Sociedades.
+  type: lookup
+  evidence:
+  - ref: LIRPF#dtdecima
+    quote: En lo que afecte a los contribuyentes del Impuesto sobre la Renta de las Personas Físicas será
+      de aplicación lo establecido en las disposiciones transitorias decimoquinta, decimosexta y vigésima
+      segunda del texto refundido de la Ley del Impuesto sobre Sociedades.
+  lexical_overlap: 0.571
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-050
+  question: ¿Cuánto tiempo tiene el heredero para notificar la subrogación al arrendador?
+  answer: Dentro de los dos meses siguientes a la fecha del fallecimiento del arrendatario.
+  type: lookup
+  evidence:
+  - ref: LAU#a33
+    quote: La subrogación deberá notificarse por escrito al arrendador dentro de los dos meses siguientes
+      a la fecha del fallecimiento del arrendatario.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-051
+  question: ¿Quiénes se consideran consumidores según esta norma?
+  answer: Las personas físicas que actúen con un propósito ajeno a su actividad comercial, empresarial,
+    oficio o profesión, y también las personas jurídicas y entidades sin personalidad jurídica que actúen
+    sin ánimo de lucro en un ámbito ajeno a una actividad comercial o empresarial.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a3
+    quote: 'A efectos de esta ley, y sin perjuicio de lo dispuesto expresamente en sus libros tercero
+      y cuarto, son consumidores o usuarios las personas físicas que actúen con un propósito ajeno a su
+      actividad comercial, empresarial, oficio o profesión.
+
+      Son también consumidores a efectos de esta norma las personas jurídicas y las entidades sin personalidad
+      jurídica que actúen sin ánimo de lucro en un ámbito ajeno a una actividad comercial o empresarial'
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-052
+  question: ¿La Ley Orgánica 3/2018 impone nuevas obligaciones a las empresas de telecomunicaciones en
+    cuanto a la privacidad de las comunicaciones?
+  answer: No, no impone obligaciones adicionales; se aplican las normas internas y de la UE.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#da-11
+    quote: Lo dispuesto en la presente ley orgánica se entenderá sin perjuicio de la aplicación de las
+      normas de Derecho interno y de la Unión Europea reguladoras de la privacidad en el sector de las
+      comunicaciones electrónicas, sin imponer obligaciones adicionales a las personas físicas o jurídicas
+      en materia de tratamiento en el marco de la prestación de servicios públicos de comunicaciones electrónicas
+      en redes públicas de comunicación en ámbitos en los que estén sujetas a obligaciones específicas
+      establecidas en dichas normas.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-053
+  question: ¿Cuánto tiempo debe permanecer la lista de electores publicada en los tablones de anuncios?
+  answer: 72 horas
+  type: numeric
+  evidence:
+  - ref: ET#a74
+    quote: Esta se hará pública en los tablones de anuncios mediante su exposición durante un tiempo no
+      inferior a setenta y dos horas.
+  lexical_overlap: 0.444
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-054
+  question: ¿Cómo se tienen en cuenta las rentas exentas con progresividad al calcular el tipo de gravamen?
+  answer: Se añaden a la base liquidable general o del ahorro para calcular el tipo medio de gravamen,
+    pero no se incluyen en la base sobre la que se aplica ese tipo.
+  type: lookup
+  evidence:
+  - ref: LIRPF#davigesima
+    quote: 'Las rentas exentas con progresividad se añadirán a la base liquidable general o del ahorro,
+      según corresponda a la naturaleza de las rentas, al objeto de calcular el tipo medio de gravamen
+      que corresponda para la determinación de la cuota íntegra estatal y autonómica.
+
+      El tipo medio de gravamen así calculado se aplicará sobre la base liquidable general o del ahorro,
+      sin incluir las rentas exentas con progresividad'
+  lexical_overlap: 0.857
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-055
+  question: ¿A qué contratos de arrendamiento se aplica el Título V de la ley?
+  answer: Los contratos de arrendamiento de finca urbana que subsistan a la fecha de entrada en vigor
+    de la ley.
+  type: lookup
+  evidence:
+  - ref: LAU#dtsexta
+    quote: El Título V de la presente ley será aplicable a los litigios relativos a los contratos de arrendamiento
+      de finca urbana que subsistan a la fecha de entrada en vigor de esta ley.
+  lexical_overlap: 1.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-056
+  question: ¿Qué debe incluir el vendedor al entregar un producto digital?
+  answer: El vendedor debe entregar el producto con todos los accesorios, instrucciones, instalación o
+    integración y asistencia al usuario.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a1-7
+    quote: Ser entregados o suministrados junto con todos los accesorios, instrucciones, también en materia
+      de instalación o integración, y asistencia al consumidor o usuario en caso de contenidos digitales
+      según disponga el contrato.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-057
+  question: ¿Cuándo emite la Agencia Española de Protección de Datos el acuerdo que inicia el proceso
+    sancionador?
+  answer: Cuando haya concluido las actuaciones previas y considere que procede.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a6-10
+    quote: Concluidas, en su caso, las actuaciones a las que se refiere el artículo anterior, corresponderá
+      a la Presidencia de la Agencia Española de Protección de Datos, cuando así proceda, dictar acuerdo
+      de inicio de procedimiento para el ejercicio de la potestad sancionadora, en que se concretarán
+      los hechos, la identificación de la persona o entidad contra la que se dirija el procedimiento,
+      la infracción que hubiera podido cometerse y su posible sanción.
+  lexical_overlap: 0.778
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-058
+  question: ¿Qué sucede con el régimen de horas complementarias que se pactó antes del 22 de diciembre
+    de 2013?
+  answer: Continúa aplicándose en los contratos vigentes a esa fecha, salvo que las partes acuerden modificarlo.
+  type: lookup
+  evidence:
+  - ref: ET#dtsexta
+    quote: El régimen de horas complementarias pactado con anterioridad al 22 de diciembre de 2013 continuará
+      siendo de aplicación en los contratos vigentes a dicha fecha, salvo que las partes acuerden modificarlo
+      en los términos establecidos en la actual redacción de los apartados 4 y 5 del artículo 12.
+  lexical_overlap: 0.875
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-059
+  question: ¿Cuánto se reducen los plazos cuando se aplica la tramitación de urgencia?
+  answer: A la mitad.
+  type: lookup
+  evidence:
+  - ref: LPAC#a33
+    quote: se podrá acordar, de oficio o a petición del interesado, la aplicación al procedimiento de
+      la tramitación de urgencia, por la cual se reducirán a la mitad los plazos establecidos para el
+      procedimiento ordinario, salvo los relativos a la presentación de solicitudes y recursos.
+  lexical_overlap: 0.833
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-060
+  question: ¿Hasta cuándo puedo recibir prestaciones bajo el régimen transitorio si la contingencia ocurrió
+    en 2012?
+  answer: Hasta el final del ejercicio 2020.
+  type: numeric
+  evidence:
+  - ref: LIRPF#dtundecima
+    quote: en el caso de contingencias acaecidas en los ejercicios 2011 a 2014, el régimen transitorio
+      solo podrá ser de aplicación, en su caso, a las prestaciones percibidas hasta la finalización del
+      octavo ejercicio siguiente a aquel en el que acaeció la contingencia correspondiente.
+  lexical_overlap: 0.444
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-061
+  question: ¿Cuánto tiempo puedo alquilar una vivienda temporal sin que se convierta en un contrato de
+    vivienda habitual?
+  answer: 12
+  type: numeric
+  evidence:
+  - ref: LAU#a9-2
+    quote: no exceder como regla general de doce meses
+  lexical_overlap: 0.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-062
+  question: ¿Puedo cancelar mi viaje combinado antes de que empiece sin pagar penalización si hay problemas
+    de seguridad?
+  answer: Sí, si existen graves problemas de seguridad en el destino, puedes cancelar antes del inicio
+    sin penalización.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#ai-2
+    quote: En circunstancias excepcionales, por ejemplo en caso de que en el lugar de destino existan
+      graves problemas de seguridad que puedan afectar al viaje combinado, los viajeros podrán poner fin
+      al contrato antes del inicio del viaje combinado sin pagar ninguna penalización.
+  lexical_overlap: 0.727
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-063
+  question: ¿Cuánto tiempo puedo estar en excedencia para cuidar a mi hijo?
+  answer: Hasta tres años.
+  type: numeric
+  evidence:
+  - ref: ET#a46
+    quote: Los trabajadores tendrán derecho a un periodo de excedencia de duración no superior a tres
+      años para atender al cuidado de cada hijo, tanto cuando lo sea por naturaleza, como por adopción,
+      o en los supuestos de guarda con fines de adopción o acogimiento permanente, a contar desde la fecha
+      de nacimiento o, en su caso, de la resolución judicial o administrativa.
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-064
+  question: ¿Qué procedimientos de aplicación de tributos están regulados por su normativa específica?
+  answer: Las actuaciones y procedimientos de aplicación de los tributos en materia tributaria y aduanera,
+    así como su revisión en vía administrativa.
+  type: lookup
+  evidence:
+  - ref: LPAC#daprimera
+    quote: Las actuaciones y procedimientos de aplicación de los tributos en materia tributaria y aduanera,
+      así como su revisión en vía administrativa.
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-065
+  question: ¿Qué porcentaje de deducción se aplica a las rentas integradas en la base imponible de los
+    períodos impositivos iniciados dentro del año 2007?
+  answer: El 14,5 % y el 19,5 %
+  type: numeric
+  evidence:
+  - ref: LIRPF#dfsegunda
+    quote: Los porcentajes de deducción del 12 y 17 por ciento establecidos en el apartado 1 de este artículo
+      serán, respectivamente, del 14,5 y 19,5 por ciento, cualquiera que sea el período impositivo en
+      el que se practique la deducción, para las rentas integradas en la base imponible de los períodos
+      impositivos iniciados dentro del año 2007.
+  lexical_overlap: 0.923
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-066
+  question: ¿Cuánto tiempo dura un contrato de arrendamiento de local de negocio para una empresa que
+    realiza actividades comerciales?
+  answer: Veinte años.
+  type: numeric
+  evidence:
+  - ref: LAU#dttercera
+    quote: Los arrendamientos de locales en los que se desarrollen actividades comerciales, en veinte
+      años.
+  lexical_overlap: 0.364
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-067
+  question: ¿Qué requisitos deben cumplir los empresarios para recibir premios de calidad estatales?
+  answer: Los requisitos que deben acreditar los empresarios para ser merecedores de premios o distintivos
+    de calidad estatales.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a45
+    quote: Los requisitos que deben acreditar los empresarios merecedores de premios o distintivos de
+      calidad de ámbito estatal.
+  lexical_overlap: 0.75
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-068
+  question: ¿Qué tipo de información puedo solicitar que se quite de los resultados de búsqueda?
+  answer: Enlaces que contengan información inadecuada, inexacta, no pertinente, no actualizada, excesiva
+    o que haya dejado de serlo con el tiempo.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a9-5
+    quote: 'Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas
+      de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados
+      que contuvieran información relativa a esa persona cuando fuesen inadecuados, inexactos, no pertinentes,
+      no actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo
+      en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza
+      e interés público de la información.
+
+      Del mismo modo deberá procederse cuando las circunstancias personales que en su caso invocase el
+      afectado evidenciasen la prevalencia de sus derechos sobre el mantenimiento de los enlaces por el
+      servicio de búsqueda en Internet'
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-069
+  question: ¿Cuánto tiempo tiene la empresa para constituir la comisión de trabajadores antes de iniciar
+    las consultas?
+  answer: siete días, o quince días si no hay representantes.
+  type: numeric
+  evidence:
+  - ref: ET#a40
+    quote: El plazo máximo para la constitución de la comisión representativa será de siete días desde
+      la fecha de la referida comunicación, salvo que alguno de los centros de trabajo que vaya a estar
+      afectado por el procedimiento no cuente con representantes legales de los trabajadores, en cuyo
+      caso el plazo será de quince días.
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-070
+  question: ¿Cuánto tiempo puede durar la suspensión del plazo máximo cuando se solicitan informes preceptivos
+    a un órgano de la misma o distinta Administración?
+  answer: 3 meses
+  type: numeric
+  evidence:
+  - ref: LPAC#a22
+    quote: Este plazo de suspensión no podrá exceder en ningún caso de tres meses.
+  lexical_overlap: 0.143
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-071
+  question: ¿Qué reducción se aplica a las prestaciones de desempleo que se pagan a partir del 1 de enero
+    de 2001?
+  answer: La reducción establecida en el artículo 18.2 de la Ley 35/2006.
+  type: lookup
+  evidence:
+  - ref: LIRPF#dtprimera
+    quote: aplicarán la reducción establecida en el artículo 18.2 de esta Ley, sin que a estos efectos
+      la celebración de tales contratos altere el cálculo del período de generación de tales prestaciones.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-072
+  question: ¿Qué ocurre si la información que envío a la autoridad no está completa o es incorrecta?
+  answer: Se considera una infracción grave.
+  type: lookup
+  evidence:
+  - ref: LAU#a4-2
+    quote: Se considerará grave el incumplimiento de la obligación descrita en el artículo 9 del Reglamento
+      (UE) 2024/1028 del Parlamento Europeo y del Consejo, de 11 de abril de 2024, cuando resulte de aplicación,
+      y se haga la recogida y transmisión mensual o trimestral, según el caso, pero los datos enviados
+      no sean completos y exactos.
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-073
+  question: ¿Qué responsabilidad tienen los operadores de las técnicas de comunicación a distancia con
+    respecto a los consumidores?
+  answer: Deben asegurarse de que los empresarios respeten los derechos de los consumidores y cumplan
+    sus obligaciones.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a95
+    quote: Los operadores de las técnicas de comunicación a distancia, entendiendo por tales a las personas
+      físicas o jurídicas, públicas o privadas, que sean titulares de las técnicas de comunicación a distancia
+      utilizadas por los empresarios, están obligados a procurar, en la medida de sus posibilidades y
+      con la diligencia debida, que éstos respeten los derechos que este título reconoce a los consumidores
+      y usuarios y cumplan las obligaciones que en él se les imponen.
+  lexical_overlap: 0.714
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-074
+  question: ¿Qué ocurre con los plazos de tramitación si la Agencia necesita información de otra autoridad
+    europea?
+  answer: Los plazos se suspenden automáticamente hasta que se reciba la información.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a6-6
+    quote: quedarán automáticamente suspendidos cuando deba recabarse información, consulta, solicitud
+      de asistencia o pronunciamiento preceptivo de un órgano u organismo de la Unión Europea o de una
+      o varias autoridades de control de los Estados miembros conforme con lo establecido en el Reglamento
+      (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, por el tiempo que medie
+      entre la solicitud y la notificación del pronunciamiento a la Agencia Española de Protección de
+      Datos.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-075
+  question: ¿Cuántas firmas necesita un trabajador para presentarse como candidato a delegado de personal?
+  answer: Al menos tres veces el número de puestos a cubrir.
+  type: lookup
+  evidence:
+  - ref: ET#a69
+    quote: Igualmente podrán presentarse los trabajadores que avalen su candidatura con un número de firmas
+      de electores de su mismo centro y colegio, en su caso, equivalente al menos a tres veces el número
+      de puestos a cubrir.
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-076
+  question: ¿Cuánto tiempo tiene la Administración para resolver una solicitud de nulidad de un acto administrativo
+    que presento?
+  answer: Si la Administración inicia el procedimiento de oficio, tiene seis meses; si lo inicia a mi
+    solicitud, se considera desestimado por silencio administrativo.
+  type: lookup
+  evidence:
+  - ref: LPAC#a106
+    quote: Cuando el procedimiento se hubiera iniciado de oficio, el transcurso del plazo de seis meses
+      desde su inicio sin dictarse resolución producirá la caducidad del mismo. Si el procedimiento se
+      hubiera iniciado a solicitud de interesado, se podrá entender la misma desestimada por silencio
+      administrativo.
+  lexical_overlap: 0.25
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-077
+  question: ¿Qué ingresos se consideran rendimientos del trabajo?
+  answer: Los sueldos y salarios, las prestaciones por desempleo, las remuneraciones por gastos de representación,
+    las dietas y asignaciones para gastos de viaje, las contribuciones a planes de pensiones, entre otros.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a17
+    quote: 'Se considerarán rendimientos íntegros del trabajo todas las contraprestaciones o utilidades,
+      cualquiera que sea su denominación o naturaleza, dinerarias o en especie, que deriven, directa o
+      indirectamente, del trabajo personal o de la relación laboral o estatutaria y no tengan el carácter
+      de rendimientos de actividades económicas.
+
+      Se incluirán, en particular:'
+  lexical_overlap: 0.75
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-078
+  question: ¿Puedo hacer cambios en la vivienda sin permiso del arrendador?
+  answer: No, no puedes hacer obras que modifiquen la vivienda sin el consentimiento escrito del arrendador.
+  type: lookup
+  evidence:
+  - ref: LAU#a23
+    quote: El arrendatario no podrá realizar sin el consentimiento del arrendador, expresado por escrito,
+      obras que modifiquen la configuración de la vivienda o de los accesorios a que se refiere el apartado
+      2 del artículo 2.
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-079
+  question: ¿Se puede aceptar una oferta de contratación si el consumidor no responde?
+  answer: No, la falta de respuesta no se considera aceptación.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a101
+    quote: En ningún caso la falta de respuesta a la oferta de contratación podrá considerarse como aceptación
+      de ésta.
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-080
+  question: ¿Quién representa a España en el Comité Europeo de Protección de Datos?
+  answer: La Agencia Española de Protección de Datos.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a4-6
+    quote: La Agencia Española de Protección de Datos tendrá la condición de representante común de las
+      autoridades de protección de datos del Reino de España en el Comité Europeo de Protección de Datos.
+  lexical_overlap: 1.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-081
+  question: ¿Cuánto tiempo están protegidos los miembros del comité de empresa contra despido o sanción?
+  answer: Durante su mandato y el año siguiente a su expiración.
+  type: numeric
+  evidence:
+  - ref: ET#a68
+    quote: No ser despedido ni sancionado durante el ejercicio de sus funciones ni dentro del año siguiente
+      a la expiración de su mandato, salvo en caso de que esta se produzca por revocación o dimisión,
+      siempre que el despido o sanción se base en la acción del trabajador en el ejercicio de su representación,
+      sin perjuicio, por tanto, de lo establecido en el artículo 54.
+  lexical_overlap: 0.222
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-082
+  question: Si inicié un procedimiento administrativo antes de que entrara en vigor la nueva ley, ¿se
+    aplicarán las normas nuevas a mi caso?
+  answer: No, seguirá regido por la normativa que estaba vigente antes de la entrada en vigor.
+  type: lookup
+  evidence:
+  - ref: LPAC#dttercera
+    quote: a) A los procedimientos ya iniciados antes de la entrada en vigor de la Ley no les será de
+      aplicación la misma, rigiéndose por la normativa anterior.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-083
+  question: ¿Cuánto puedo deducir por cada ascendente mayor de 65 años que no tenga ingresos superiores
+    a 8.000 euros?
+  answer: 1.150 euros
+  type: numeric
+  evidence:
+  - ref: LIRPF#a59
+    quote: El mínimo por ascendientes será de 1.150 euros anuales, por cada uno de ellos mayor de 65 años
+      o con discapacidad cualquiera que sea su edad que conviva con el contribuyente y no tenga rentas
+      anuales, excluidas las exentas, superiores a 8.000 euros.
+  lexical_overlap: 0.667
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-084
+  question: ¿Con qué frecuencia debe el arrendador notificar al arrendatario el importe de la actualización
+    de la renta?
+  answer: Cada año en que se aplique la actualización.
+  type: lookup
+  evidence:
+  - ref: LAU#dtsegunda
+    quote: Efectuado dicho requerimiento, en cada uno de los años en que aplique esta actualización, el
+      arrendador deberá notificar al arrendatario el importe de la actualización, acompañando certificación
+      del Instituto Nacional de Estadística expresiva de los índices determinantes de la cantidad notificada.
+  lexical_overlap: 0.75
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-085
+  question: ¿Tengo que devolver el producto si ya lo he usado?
+  answer: No, no tienes que devolver el producto ni reembolsar la pérdida de valor por su uso.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a74
+    quote: El consumidor y usuario no tendrá que rembolsar cantidad alguna por la disminución del valor
+      del bien, que sea consecuencia de su uso conforme a lo pactado o a su naturaleza, o por el uso del
+      servicio.
+  lexical_overlap: 0.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-086
+  question: ¿Qué deben hacer los medios digitales cuando alguien solicita rectificación de una noticia?
+  answer: Publican un aviso aclaratorio junto con la información original.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a8-7
+    quote: Cuando los medios de comunicación digitales deban atender la solicitud de rectificación formulada
+      contra ellos deberán proceder a la publicación en sus archivos digitales de un aviso aclaratorio
+      que ponga de manifiesto que la noticia original no refleja la situación actual del individuo. Dicho
+      aviso deberá aparecer en lugar visible junto con la información original.
+  lexical_overlap: 0.625
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-087
+  question: ¿Cuánto tiempo tiene la empresa para comunicar su decisión sobre la suspensión de contratos
+    o reducción de jornada después de la última reunión del periodo de consultas?
+  answer: Quince días.
+  type: numeric
+  evidence:
+  - ref: ET#a47
+    quote: Si en el plazo de quince días desde la fecha de la última reunión celebrada en el periodo de
+      consultas, la empresa no hubiera comunicado a los representantes de los trabajadores y a la autoridad
+      laboral su decisión sobre la suspensión de contratos o reducción temporal de jornada, se producirá
+      la caducidad del procedimiento en los términos que reglamentariamente se establezcan.
+  lexical_overlap: 0.786
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-088
+  question: ¿Cuánto tiempo tengo para presentar alegaciones?
+  answer: Entre diez y quince días.
+  type: numeric
+  evidence:
+  - ref: LPAC#a82
+    quote: Los interesados, en un plazo no inferior a diez días ni superior a quince, podrán alegar y
+      presentar los documentos y justificaciones que estimen pertinentes.
+  lexical_overlap: 0.4
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-089
+  question: ¿Hasta cuánto puedo deducir los intereses de financiación de un inmueble?
+  answer: No puede superar la cantidad de los rendimientos íntegros que obtenga por ese bien o derecho.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a23
+    quote: El importe total a deducir por estos gastos no podrá exceder, para cada bien o derecho, de
+      la cuantía de los rendimientos íntegros obtenidos.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-090
+  question: ¿Cuánto puede subir la renta después de que el arrendador haga mejoras?
+  answer: No puede superar el veinte por ciento de la renta vigente.
+  type: numeric
+  evidence:
+  - ref: LAU#a19
+    quote: sin que pueda exceder el aumento del veinte por ciento de la renta vigente en aquel momento.
+  lexical_overlap: 0.25
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-091
+  question: ¿Cuánto tiempo dura la garantía mínima que debe ofrecer el vendedor?
+  answer: Al menos 6 meses
+  type: numeric
+  evidence:
+  - ref: TRLGDCU#dtprimera
+    quote: El plazo de duración de la garantía que, en ningún caso será inferior a 6 meses desde la fecha
+      de entrega, salvo cuando la naturaleza del bien lo impidiera y sin perjuicio de las disposiciones
+      legales o reglamentarias para bienes o servicios concretos.
+  lexical_overlap: 0.125
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-092
+  question: ¿Qué sucede si publico fotos de un menor sin su consentimiento en redes sociales?
+  answer: El Ministerio Fiscal intervendrá y podrá imponer medidas cautelares y de protección según la
+    Ley de Protección Jurídica del Menor.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a8-6
+    quote: La utilización o difusión de imágenes o información personal de menores en las redes sociales
+      y servicios de la sociedad de la información equivalentes que puedan implicar una intromisión ilegítima
+      en sus derechos fundamentales determinará la intervención del Ministerio Fiscal, que instará las
+      medidas cautelares y de protección previstas en la Ley Orgánica 1/1996, de 15 de enero, de Protección
+      Jurídica del Menor.
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-093
+  question: ¿Cuánto tiempo tiene la autoridad laboral para decidir sobre la existencia de fuerza mayor?
+  answer: Cinco días
+  type: numeric
+  evidence:
+  - ref: ET#a51
+    quote: en el plazo de cinco días desde la solicitud
+  lexical_overlap: 0.0
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-094
+  question: ¿Quiénes deben cumplir los plazos establecidos en la ley?
+  answer: Las autoridades y el personal al servicio de las Administraciones Públicas competentes, así
+    como los interesados en los asuntos.
+  type: lookup
+  evidence:
+  - ref: LPAC#a29
+    quote: Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal
+      al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, así
+      como a los interesados en los mismos.
+  lexical_overlap: 0.6
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-095
+  question: ¿Puedo vender mi vivienda habitual como dación en pago para cancelar una hipoteca y quedar
+    exento de impuestos?
+  answer: Sí, si la vivienda habitual se da en pago para cancelar una hipoteca garantizada sobre la misma
+    y no tienes otros bienes suficientes para cubrir la deuda, la ganancia patrimonial quedará exenta.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a33
+    quote: Con ocasión de la dación en pago de la vivienda habitual del deudor o garante del deudor, para
+      la cancelación de deudas garantizadas con hipoteca que recaiga sobre la misma, contraídas con entidades
+      de crédito o de cualquier otra entidad que, de manera profesional, realice la actividad de concesión
+      de préstamos o créditos hipotecarios.
+  lexical_overlap: 0.545
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-096
+  question: ¿Cuánto se reduce la sanción si pago dentro de los 20 días?
+  answer: 50%
+  type: numeric
+  evidence:
+  - ref: LAU#a4-10
+    quote: La reducción del cincuenta por ciento del importe de la sanción.
+  lexical_overlap: 0.143
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-097
+  question: ¿Puedo cancelar mi viaje combinado antes de que empiece y qué penalización tendría que pagar?
+  answer: Sí, puedes cancelar antes del inicio del viaje combinado, pero tendrás que pagar una penalización
+    adecuada o la penalización que el organizador establezca.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a153
+    quote: Indicación de que el viajero puede resolver el contrato en cualquier momento antes del inicio
+      del viaje combinado, a cambio del pago de una penalización adecuada o, en su caso, de la penalización
+      tipo aplicada por este concepto por el organizador, de conformidad con el artículo 160.1.
+  lexical_overlap: 0.625
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-098
+  question: ¿Cuánto tiempo se pueden conservar los datos bloqueados antes de que se deba destruirlos?
+  answer: Hasta que transcurra el plazo de prescripción de las posibles responsabilidades derivadas del
+    tratamiento.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a3-4
+    quote: 'excepto para la puesta a disposición de los datos a los jueces y tribunales, el Ministerio
+      Fiscal o las Administraciones Públicas competentes, en particular de las autoridades de protección
+      de datos, para la exigencia de posibles responsabilidades derivadas del tratamiento y solo por el
+      plazo de prescripción de las mismas.
+
+      Transcurrido ese plazo deberá procederse a la destrucción de los datos'
+  lexical_overlap: 0.25
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-099
+  question: ¿Cuántos delegados de personal se eligen en una empresa con 25 trabajadores?
+  answer: Uno
+  type: numeric
+  evidence:
+  - ref: ET#a62
+    quote: 'Los trabajadores elegirán, mediante sufragio libre, personal, secreto y directo a los delegados
+      de personal en el número siguiente: hasta treinta trabajadores, uno; de treinta y uno a cuarenta
+      y nueve, tres.'
+  lexical_overlap: 0.429
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-100
+  question: ¿Qué deben hacer los responsables de una unidad administrativa si detectan un retraso en la
+    tramitación de un procedimiento?
+  answer: Deben adoptar las medidas oportunas para remover los obstáculos que impidan, dificulten o retrasen
+    el ejercicio pleno de los derechos de los interesados.
+  type: lookup
+  evidence:
+  - ref: LPAC#a20
+    quote: Los titulares de las unidades administrativas y el personal al servicio de las Administraciones
+      Públicas que tuviesen a su cargo la resolución o el despacho de los asuntos, serán responsables
+      directos de su tramitación y adoptarán las medidas oportunas para remover los obstáculos que impidan,
+      dificulten o retrasen el ejercicio pleno de los derechos de los interesados o el respeto a sus intereses
+      legítimos, disponiendo lo necesario para evitar y eliminar toda anormalidad en la tramitación de
+      procedimientos.
+  lexical_overlap: 0.444
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-101
+  question: ¿Cuál es el límite de ingresos que me obliga a declarar la renta en 2018?
+  answer: 12,643 euros
+  type: numeric
+  evidence:
+  - ref: LIRPF#dt
+    quote: el límite de 14.000 euros establecido en el primer párrafo del apartado 3 del artículo 96 de
+      esta Ley será de 12.643 euros.
+  lexical_overlap: 0.167
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-102
+  question: ¿Qué normativa regula las infracciones y sanciones en materia de defensa del consumidor?
+  answer: El Real Decreto 1945/1983, de 22 de junio.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#dftercera
+    quote: A efectos de lo establecido en el libro primero, título IV, capítulo II de esta norma será
+      de aplicación el Real Decreto 1945/1983, de 22 de junio, por el que se regulan las infracciones
+      y sanciones en materia de defensa del consumidor y de la producción agroalimentaria, sin perjuicio
+      de sus ulteriores modificaciones o adaptaciones por el Gobierno.
+  lexical_overlap: 0.857
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-103
+  question: Si ya inicié un procedimiento de protección de datos antes de que entrara en vigor la nueva
+    ley, ¿qué normativa se aplica a mi caso?
+  answer: Se aplica la normativa anterior, salvo que la nueva ley ofrezca disposiciones más favorables
+    para usted.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#dt-3
+    quote: Los procedimientos ya iniciados a la entrada en vigor de esta ley orgánica se regirán por la
+      normativa anterior, salvo que esta ley orgánica contenga disposiciones más favorables para el interesado.
+  lexical_overlap: 0.455
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-104
+  question: ¿Cómo se resuelven las diferencias entre empleadores y empleados sobre los derechos de conciliación?
+  answer: Se resuelven por la jurisdicción social mediante el procedimiento del artículo 139 de la Ley
+    36/2011.
+  type: lookup
+  evidence:
+  - ref: ET#dadecimoctava
+    quote: Las discrepancias que surjan entre empresarios y trabajadores en relación con el ejercicio
+      de los derechos de conciliación de la vida personal, familiar y laboral reconocidos legal o convencionalmente
+      se resolverán por la jurisdicción social a través del procedimiento establecido en el artículo 139
+      de la Ley 36/2011, de 10 de octubre, Reguladora de la Jurisdicción Social.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-105
+  question: ¿Quién puede dictar las disposiciones reglamentarias necesarias para aplicar esta ley?
+  answer: El Consejo de Ministros y el Ministro de Hacienda y Administraciones Públicas.
+  type: lookup
+  evidence:
+  - ref: LPAC#dfsexta
+    quote: 'Disposición final sexta. Desarrollo normativo de la Ley.
+
+      Se faculta al Consejo de Ministros y al Ministro de Hacienda y Administraciones Públicas, en el
+      ámbito de sus competencias, para dictar cuantas disposiciones reglamentarias sean necesarias para
+      el desarrollo de la presente Ley, así como para acordar las medidas necesarias para garantizar la
+      efectiva ejecución e implantación de las previsiones de esta Ley'
+  lexical_overlap: 0.714
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-106
+  question: ¿Qué aportaciones a planes de pensiones pueden deducirse en la base imponible general?
+  answer: Las aportaciones realizadas por los partícipes a planes de pensiones, incluyendo las contribuciones
+    del promotor que le hubiesen sido imputadas en concepto de rendimiento del trabajo.
+  type: lookup
+  evidence:
+  - ref: LIRPF#a51
+    quote: Las aportaciones realizadas por los partícipes a planes de pensiones, incluyendo las contribuciones
+      del promotor que le hubiesen sido imputadas en concepto de rendimiento del trabajo.
+  lexical_overlap: 0.375
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-107
+  question: ¿Cuánto tiempo tiene el arrendador para enviar los datos del contrato al Ministerio?
+  answer: Tres meses a partir de la entrada en vigor de la ley.
+  type: numeric
+  evidence:
+  - ref: LAU#dasexta
+    quote: los arrendadores deberán remitir, al Ministerio de Obras Públicas, Transportes y Medio Ambiente,
+      en el plazo máximo de tres meses a partir de la entrada en vigor de la ley, los datos del contrato
+      a que se refiere el párrafo anterior.
+  lexical_overlap: 0.571
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-108
+  question: ¿Quiénes están obligados a mantener la confidencialidad de los datos personales?
+  answer: Los responsables y encargados del tratamiento de datos, así como todas las personas que intervengan
+    en cualquier fase del tratamiento.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#a5
+    quote: Los responsables y encargados del tratamiento de datos así como todas las personas que intervengan
+      en cualquier fase de este estarán sujetas al deber de confidencialidad al que se refiere el artículo
+      5.1.f) del Reglamento (UE) 2016/679.
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-109
+  question: ¿Qué debe ofrecer la empresa a los trabajadores afectados por un despido colectivo que supere
+    los 50 trabajadores?
+  answer: Un plan de recolocación externa a través de empresas de recolocación autorizadas, con un periodo
+    mínimo de seis meses, que incluya formación, orientación profesional, atención personalizada y búsqueda
+    activa de empleo.
+  type: lookup
+  evidence:
+  - ref: ET#a51
+    quote: La empresa que lleve a cabo un despido colectivo que afecte a más de cincuenta trabajadores
+      deberá ofrecer a los trabajadores afectados un plan de recolocación externa a través de empresas
+      de recolocación autorizadas. Dicho plan, diseñado para un periodo mínimo de seis meses, deberá incluir
+      medidas de formación y orientación profesional, atención personalizada al trabajador afectado y
+      búsqueda activa de empleo.
+  lexical_overlap: 0.778
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-110
+  question: ¿Cuánto tiempo tengo para que la administración cancele un acto que me perjudica?
+  answer: Hasta que no haya transcurrido el plazo de prescripción.
+  type: lookup
+  evidence:
+  - ref: LPAC#a109
+    quote: Las Administraciones Públicas podrán revocar, mientras no haya transcurrido el plazo de prescripción,
+      sus actos de gravamen o desfavorables, siempre que tal revocación no constituya dispensa o exención
+      no permitida por las leyes, ni sea contraria al principio de igualdad, al interés público o al ordenamiento
+      jurídico.
+  lexical_overlap: 0.143
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-111
+  question: ¿Cuál es la cantidad mínima que debe superar la cuantía de un recurso de retracto en un juicio
+    de desahucio por arrendamiento de vivienda?
+  answer: 1.500.000 pesetas
+  type: numeric
+  evidence:
+  - ref: LAU#daquinta
+    quote: No obstante, si se tratase de arrendamiento de vivienda bastará con que la cuantía exceda de
+      1.500.000 pesetas.
+  lexical_overlap: 0.273
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-112
+  question: ¿Qué tipo de cláusulas se consideran abusivas cuando se trata de los plazos para aceptar o
+    rechazar una oferta?
+  answer: Cláusulas que reservan al empresario un plazo excesivamente largo o insuficientemente determinado
+    para aceptar o rechazar una oferta contractual o satisfacer la prestación debida.
+  type: lookup
+  evidence:
+  - ref: TRLGDCU#a85
+    quote: Las cláusulas que reserven al empresario que contrata con el consumidor y usuario un plazo
+      excesivamente largo o insuficientemente determinado para aceptar o rechazar una oferta contractual
+      o satisfacer la prestación debida.
+  lexical_overlap: 0.556
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-113
+  question: ¿Cuánto tiempo antes de la audiencia debe presentar la Comisión Europea sus observaciones?
+  answer: Diez días antes de la celebración del acto del juicio.
+  type: lookup
+  evidence:
+  - ref: LOPDGDD#df-7
+    quote: La Comisión Europea, la Comisión Nacional de los Mercados y la Competencia y los órganos competentes
+      de las comunidades autónomas aportarán la información o presentarán las observaciones previstas
+      en el número anterior diez días antes de la celebración del acto del juicio a que se refiere el
+      artículo 433 o dentro del plazo de oposición o impugnación del recurso interpuesto.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-114
+  question: Tengo una empresa y también alquilo una vivienda. ¿Me afecta la eliminación de algunas normas
+    del impuesto sobre sociedades a la deducción de los intereses que pago por la compra de la vivienda
+    que alquilo?
+  answer: No. La derogación de los artículos del impuesto sobre sociedades no modifica la normativa del
+    impuesto sobre la renta de las personas físicas. En la IRPF, los intereses de los préstamos que se
+    usan para adquirir o mejorar la vivienda que alquilas siguen siendo deducibles, siempre y cuando el
+    importe total no supere el rendimiento íntegro que genere esa vivienda. Por tanto, puedes seguir deduciendo
+    esos intereses dentro del límite establecido, sin que la eliminación de las normas del impuesto sobre
+    sociedades tenga efecto sobre esa deducción.
+  type: multi_evidence
+  evidence:
+  - ref: LIRPF#ddsegunda
+    quote: Con efectos para los períodos impositivos que se inicien a partir de 1 de enero de 2007 quedan
+      derogados el artículo 23 y el Capítulo VI del Título VII del texto refundido de la Ley del Impuesto
+      sobre Sociedades, aprobado por Real Decreto Legislativo 4/2004, de 5 de marzo.
+  - ref: LIRPF#a23
+    quote: Los intereses de los capitales ajenos invertidos en la adquisición o mejora del bien, derecho
+      o facultad de uso y disfrute del que procedan los rendimientos, y demás gastos de financiación,
+      así como los gastos de reparación y conservación del inmueble.
+  lexical_overlap: 0.231
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-115
+  question: Si presento una queja sobre el tratamiento de mis datos y el Comité Europeo de Protección
+    de Datos necesita revisar mi caso, ¿cómo se coordinará la comunicación y cuánto tiempo tardará el
+    proceso?
+  answer: La Agencia Española de Protección de Datos se encargará de todas las comunicaciones entre el
+    Comité Europeo de Protección de Datos y las autoridades autonómicas, con la ayuda de un representante
+    de la autoridad autonómica. El procedimiento que se inicie tendrá una duración máxima de doce meses
+    desde la fecha del acuerdo de inicio.
+  type: multi_evidence
+  evidence:
+  - ref: LOPDGDD#a6-2
+    quote: Se practicarán por conducto de la Agencia Española de Protección de Datos todas las comunicaciones
+      entre el Comité Europeo de Protección de Datos y las autoridades autonómicas de protección de datos
+      cuando éstas, como autoridades competentes, deban someter su proyecto de decisión al citado comité
+      o le soliciten el examen de un asunto en virtud de lo establecido en los apartados 1 y 2 del artículo
+      64 del Reglamento (UE) 2016/679.
+  - ref: LOPDGDD#a6-6
+    quote: El procedimiento tendrá una duración máxima de doce meses a contar desde la fecha del acuerdo
+      de inicio.
+  lexical_overlap: 0.312
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-116
+  question: Si quiero hacer mejoras en mi piso alquilado y el arrendador se opone, ¿cuánto tiempo tendría
+    para resolver la disputa mediante arbitraje?
+  answer: Las mejoras están reguladas por las disposiciones de los artículos 21, 22, 23 y 26, y el artículo
+    19, que se aplican a los arrendamientos desde el inicio. Si surge una disputa y no hay acuerdo expreso,
+    el arbitraje debe dictar laudo en un plazo de tres meses.
+  type: multi_evidence
+  evidence:
+  - ref: LAU#daseptima
+    quote: En los procedimientos arbitrales que traigan causa de contratos sometidos al régimen jurídico
+      de la Ley de Arrendamientos Urbanos, a falta de pacto expreso de las partes, los árbitros deberán
+      dictar el laudo en el término de tres meses, contado como se dispone en el número 1 de este artículo.
+  - ref: LAU#a30
+    quote: Lo dispuesto en los artículos 21, 22, 23 y 26 de esta ley será también aplicable a los arrendamientos
+      que regula el presente Título. También lo será lo dispuesto en el artículo 19 desde el comienzo
+      del arrendamiento.
+  lexical_overlap: 0.071
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-117
+  question: Compré una silla a medida a través de una tienda online. ¿Puedo cancelarla y qué costos tendría
+    que asumir si lo hiciera?
+  answer: No, no puedes cancelarla. El hecho de que la silla haya sido confeccionada según tus especificaciones
+    la coloca dentro de una excepción al derecho de desistimiento, por lo que ese derecho no se aplica
+    y estás obligado a pagar el precio total. Si, en cambio, el contrato hubiera sido susceptible de desistimiento,
+    tendrías que pagar el coste de devolución de los bienes, pero en este caso no existe tal derecho.
+  type: multi_evidence
+  evidence:
+  - ref: TRLGDCU#a97
+    quote: 'j) Cuando exista un derecho de desistimiento, las condiciones, el plazo y los procedimientos
+      para ejercer ese derecho, así como el modelo de formulario de desistimiento.
+
+      k) Cuando proceda, la indicación de que el consumidor o usuario tendrá que asumir el coste de la
+      devolución de los bienes en caso de desistimiento y, para los contratos a distancia, cuando los
+      bienes, por su naturaleza, no puedan devolverse normalmente por correo postal, el coste de la devolución
+      de los mismos'
+  - ref: TRLGDCU#a103
+    quote: 'b) El suministro de bienes o la prestación de servicios cuyo precio dependa de fluctuaciones
+      del mercado financiero que el empresario no pueda controlar y que puedan producirse durante el periodo
+      de desistimiento.
+
+      c) El suministro de bienes confeccionados conforme a las especificaciones del consumidor y usuario
+      o claramente personalizados'
+  lexical_overlap: 0.333
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-118
+  question: ¿Qué puede hacer la Agencia Española de Protección de Datos si una empresa usa un organismo
+    de certificación que no está acreditado para transferir datos al extranjero?
+  answer: La Agencia puede sancionar al organismo de certificación por incumplir la normativa y, al mismo
+    tiempo, adoptar cláusulas contractuales tipo y normas corporativas vinculantes para garantizar que
+    las transferencias internacionales de datos se realicen con los niveles adecuados de protección.
+  type: multi_evidence
+  evidence:
+  - ref: LOPDGDD#a7-5
+    quote: z) El desempeño de funciones que el Reglamento (UE) 2016/679 reserva a los organismos de certificación,
+      sin haber sido debidamente acreditado conforme a lo establecido en el artículo 39 de esta ley orgánica.
+  - ref: LOPDGDD#a4-3
+    quote: 1. La Agencia Española de Protección de Datos y las autoridades autonómicas de protección de
+      datos podrán adoptar, conforme a lo dispuesto en el artículo 46.2.c) del Reglamento (UE) 2016/679,
+      cláusulas contractuales tipo para la realización de transferencias internacionales de datos, que
+      se someterán previamente al dictamen del Comité Europeo de Protección de Datos previsto en el artículo
+      64 del citado reglamento.
+  lexical_overlap: 0.5
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-119
+  question: ¿Puedo deducir las aportaciones a mi plan de pensiones en la declaración conjunta y cómo se
+    aplican los límites de reducción?
+  answer: Sí, puedes deducir las aportaciones a tu plan de pensiones. En la declaración conjunta, cada
+    cónyuge puede aplicar el límite máximo de reducción de forma individual, por lo que ambos pueden beneficiarse
+    de la deducción por aportaciones a planes de pensiones.
+  type: multi_evidence
+  evidence:
+  - ref: LIRPF#a84
+    quote: Los límites máximos de reducción en la base imponible previstos en los artículos 52, 53 y 54
+      y en la disposición adicional undécima de esta Ley, serán aplicados individualmente por cada partícipe
+      o mutualista integrado en la unidad familiar.
+  - ref: LIRPF#a51
+    quote: 'Podrán reducirse en la base imponible general las siguientes aportaciones y contribuciones
+      a sistemas de previsión social:
+
+      1. Aportaciones y contribuciones a planes de pensiones.
+
+      1.º Las aportaciones realizadas por los partícipes a planes de pensiones, incluyendo las contribuciones
+      del promotor que le hubiesen sido imputadas en concepto de rendimiento del trabajo'
+  lexical_overlap: 0.6
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-120
+  question: Para reclamar un beneficio social, ¿necesito presentar una declaración responsable y también
+    debo agotar la vía administrativa antes de acudir a la vía judicial?
+  answer: Sí. Primero debes presentar una declaración responsable y, antes de iniciar un procedimiento
+    judicial, debes agotar la vía administrativa.
+  type: multi_evidence
+  evidence:
+  - ref: LPAC#dftercera
+    quote: Artículo 69. Agotamiento de la vía administrativa previa a la vía judicial social.
+  - ref: LPAC#a69
+    quote: Artículo 69. Declaración responsable y comunicación.
+  lexical_overlap: 0.538
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-121
+  question: Compré acciones de una empresa de nueva creación y deduje el 50 % de la inversión. Ahora las
+    he vendido y quiero reinvertir el dinero en la misma empresa. ¿Puedo excluir la ganancia de la base
+    imponible?
+  answer: Sí, puedes excluir la ganancia patrimonial siempre que cumplas con las condiciones de ambos
+    apartados. El artículo 38 permite excluir de gravamen las ganancias obtenidas por la transmisión de
+    acciones que se hubieran adquirido con la deducción prevista en el artículo 68, siempre que el importe
+    total obtenido se reinvierta en la adquisición de acciones o participaciones de la misma entidad.
+    Por su parte, el artículo 68 establece que los contribuyentes pueden deducirse el 50 % de las cantidades
+    satisfechas por la suscripción de acciones o participaciones en empresas de nueva o reciente creación,
+    siempre que se cumplan los requisitos de la normativa. Por lo tanto, si reinviertes el importe total
+    de la venta en la misma empresa y cumples con los requisitos de la deducción de la Ley de la Renta,
+    la ganancia quedará exenta de gravamen.
+  type: multi_evidence
+  evidence:
+  - ref: LIRPF#a38
+    quote: Podrán excluirse de gravamen las ganancias patrimoniales que se pongan de manifiesto con ocasión
+      de la transmisión de acciones o participaciones por las que se hubiera practicado la deducción prevista
+      en el artículo 68.1 de esta Ley, siempre que el importe total obtenido por la transmisión de las
+      mismas se reinvierta en la adquisición de acciones o participaciones de las citadas entidades en
+      las condiciones que reglamentariamente se determinen.
+  - ref: LIRPF#a68
+    quote: Los contribuyentes podrán deducirse el 50 por ciento de las cantidades satisfechas en el período
+      de que se trate por la suscripción de acciones o participaciones en empresas de nueva o reciente
+      creación, cuando se cumpla lo dispuesto en los números 2.º y 3.º de este apartado, pudiendo, además
+      de la aportación temporal al capital, aportar sus conocimientos empresariales o profesionales adecuados
+      para el desarrollo de la entidad en la que invierten, en los términos que establezca el acuerdo
+      de inversión entre el contribuyente y la entidad.
+  lexical_overlap: 0.45
+  source: groq-gpt-oss-20b
+  status: pending
+- id: gen-122
+  question: Mi esposa y yo estamos pensando en presentar la declaración de la renta juntos. ¿Cómo afecta
+    eso a la retención que se aplica a los ingresos de mi esposa?
+  answer: Al presentar la declaración en conjunto, ambos contribuyentes se consideran una sola unidad
+    familiar y se aplican las retenciones correspondientes a cada uno según la escala de 2015. La retención
+    se calcula sobre los ingresos del trabajo de cada persona antes del 12 de julio con la tabla que indica
+    los tipos de 20%, 25%, 31%, 39% y 47% según el tramo. Si la retención se aplica después del 12 de
+    julio, se usa la escala con tipos ligeramente menores (19,5%, 24,5%, 30,5%, 38% y 46%). Al tributar
+    conjuntamente, el resultado final de la declaración se determina con la suma de ambos ingresos y las
+    retenciones aplicadas, y se calcula el impuesto sobre la renta de la unidad familiar.
+  type: multi_evidence
+  evidence:
+  - ref: LIRPF#datrigesimaprimera
+    quote: 'En el período impositivo 2015, para determinar el tipo de retención o ingreso a cuenta a practicar
+      sobre los rendimientos del trabajo satisfechos con anterioridad a 12 de julio a los que resulte
+      de aplicación el procedimiento general de retención a que se refiere el artículo 82 del Reglamento
+      del Impuesto sobre la Renta de las Personas Físicas, la escala de retención a que se refiere el
+      apartado 1 del artículo 101 de esta Ley será la siguiente:'
+  - ref: LIRPF#a82
+    quote: 'Podrán tributar conjuntamente las personas que formen parte de alguna de las siguientes modalidades
+      de unidad familiar:
+
+      1.ª La integrada por los cónyuges no separados legalmente y, si los hubiera:
+
+      a) Los hijos menores, con excepción de los que, con el consentimiento de los padres, vivan independientes
+      de éstos.
+
+      b) Los hijos mayores de edad incapacitados judicialmente sujetos a patria potestad prorrogada o
+      rehabilitada'
+  lexical_overlap: 0.364
+  source: groq-gpt-oss-20b
+  status: pending
