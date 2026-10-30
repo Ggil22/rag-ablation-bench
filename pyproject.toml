@@ -6,8 +6,32 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.27",
+    "numpy>=1.26",
+    "openai>=1.40",
+    "python-dotenv>=1.0",
     "pyyaml>=6.0",
+    "snowballstemmer>=2.2",
 ]
+
+[project.optional-dependencies]
+# Embedding and reranking models. Kept optional so CI does not download CUDA builds.
+models = [
+    "sentence-transformers>=3.0",
+    "torch>=2.6",
+]
+serve = [
+    "fastapi>=0.110",
+    "langfuse>=3.0",
+    "uvicorn>=0.30",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
 
 [project.scripts]
 rab = "rag_ablation_bench.cli:main"
@@ -28,6 +52,10 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Prompt templates: wrapping their lines would change the text the model receives.
+"src/rag_ablation_bench/evaluation/{judge,question_gen}.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

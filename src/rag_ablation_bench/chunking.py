@@ -14,6 +14,7 @@ from collections.abc import Callable, Iterator
 from rag_ablation_bench.schema import Chunk, Document, Section, Span
 
 Piece = tuple[str, int, int]  # section_id, start, end
+SEPARATOR = "\n\n"  # between the texts of different sections inside one chunk
 
 NUMBERED_SUBSECTION = re.compile(r"^\d+(?:\s*(?:bis|ter|quater))?\.\s")
 SENTENCE = re.compile(r"\S.*?(?:[.;:](?=\s|$)|$)", re.DOTALL)
@@ -42,7 +43,7 @@ def _to_chunk(pieces: list[Piece], doc: Document, sections: dict[str, Section], 
     return Chunk(
         id=f"{doc.id}:{n}",
         doc_id=doc.id,
-        text="\n\n".join(sections[s.section_id].text[s.start : s.end] for s in spans),
+        text=SEPARATOR.join(sections[s.section_id].text[s.start : s.end] for s in spans),
         header=" > ".join((doc.short_title, *first.path, first.title)),
         spans=tuple(spans),
     )

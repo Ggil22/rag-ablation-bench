@@ -7,3 +7,4 @@ __pycache__/
 .cache/
 # Downloaded sources and derived corpora are rebuilt with `rab corpus` / `rab chunk`.
 data/
+logs/

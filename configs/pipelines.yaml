@@ -1,0 +1,28 @@
+# End-to-end pipelines: a chunking config, a retriever and a shared generator.
+# The judge must be a different model from the generator, to avoid self-preference.
+generator: gemini-flash-lite
+judge: groq-gpt-oss-120b
+budget: 2000          # words of retrieved context given to the generator
+baseline: naive       # every pipeline is compared to this one
+serve: hybrid-rerank-structure
+
+# Chosen from the retrieval runs (results/retrieval/seed-v2, query-v2): each pipeline
+# changes one thing with respect to the previous one.
+pipelines:
+  closed-book:        # no retrieval: what the model knows on its own
+    closed_book: true
+  naive:              # the usual tutorial RAG: fixed chunks + embeddings
+    chunking: fixed-256
+    retriever: dense-bge-m3
+  hybrid:             # + BM25 fused with RRF
+    chunking: fixed-256
+    retriever: hybrid
+  hybrid-rerank:      # + cross-encoder reranking
+    chunking: fixed-256
+    retriever: hybrid-rerank
+  hybrid-rerank-structure:  # + structure-aware chunking
+    chunking: structure-512
+    retriever: hybrid-rerank
+  hyde-structure:     # no GPU reranker: HyDE query expansion instead
+    chunking: structure-512
+    retriever: dense-hyde

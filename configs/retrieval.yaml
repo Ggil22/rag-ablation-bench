@@ -1,0 +1,79 @@
+# Retrieval pipelines compared in the ablation. Every retriever indexes the chunk text
+# prefixed with its header ("ET > TÍTULO I > ... > Artículo 37. ...") unless header: false.
+
+# --- lexical ---------------------------------------------------------------------------
+bm25:
+  type: bm25
+bm25-nostem:
+  type: bm25
+  stem: false
+bm25-noheader:
+  type: bm25
+  header: false
+
+# --- dense (multilingual embedding models that fit an 8 GB GPU in fp16) -----------------
+dense-e5-base:
+  type: dense
+  model: intfloat/multilingual-e5-base
+  query_prefix: "query: "
+  doc_prefix: "passage: "
+  max_seq_length: 512          # the model's own limit
+dense-bge-m3:
+  type: dense
+  model: BAAI/bge-m3
+dense-qwen3:
+  type: dense
+  model: Qwen/Qwen3-Embedding-0.6B
+  query_prefix: "Instruct: Given a question about Spanish law, retrieve the passages of the law that answer it\nQuery: "
+dense-bge-m3-noheader:
+  type: dense
+  model: BAAI/bge-m3
+  header: false
+
+# --- hybrid and reranking ----------------------------------------------------------------
+hybrid:
+  type: hybrid
+  components: [bm25, dense-bge-m3]
+hybrid-rerank:
+  type: rerank
+  base: hybrid
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 50
+dense-rerank:
+  type: rerank
+  base: dense-bge-m3
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 50
+
+# --- query transformation with an LLM (model names from configs/models.yaml) -------------
+# Not part of the default grid: they call an API. Select them with --retrievers.
+hybrid-rewrite:
+  type: query
+  base: hybrid
+  mode: rewrite
+  model: gemini-flash-lite
+  llm: true
+dense-hyde:
+  type: query
+  base: dense-bge-m3
+  mode: hyde
+  model: gemini-flash-lite
+  llm: true
+hybrid-multi:
+  type: query
+  base: hybrid
+  mode: multi
+  model: gemini-flash-lite
+  llm: true
+hybrid-rewrite-rerank:
+  type: rerank
+  base: hybrid-rewrite
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 50
+  llm: true
+hybrid-multi-rerank:
+  type: rerank
+  base: hybrid-multi
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 50
+  llm: true

@@ -1,0 +1,383 @@
+# Seed evaluation set for the BOE corpus (wording in force on 2026-10-30).
+#
+# Written by reading the laws; every quote is checked against the corpus on load.
+# Changes after a run are noted in the question's `notes` (v2 = after run seed-v1).
+# Question types:
+#   lookup          plain-language question about one provision (vocabulary mismatch)
+#   numeric         the answer is a figure, often in a table
+#   exact_reference the question cites the article or law
+#   distractor      a similar provision elsewhere (another law, a transitional or repealed
+#                   regime, a near-identical table) gives a wrong answer
+#   multi_evidence  needs facts from two provisions
+#   unanswerable    the corpus does not contain the answer (sometimes it looks like it does)
+
+# --- Estatuto de los Trabajadores ---------------------------------------------------------
+
+- id: boe-001
+  question: ¿Cuántos días libres me dan en el trabajo si me caso?
+  answer: Quince días naturales de permiso retribuido.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 37"
+      quote: Quince días naturales en caso de matrimonio o registro de pareja de hecho.
+
+- id: boe-002
+  question: Me cambio de piso, ¿tengo algún día de permiso retribuido para la mudanza?
+  answer: Sí, un día por traslado del domicilio habitual.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 37"
+      quote: Un día por traslado del domicilio habitual.
+
+- id: boe-003
+  question: Si el convenio no dice nada, ¿cuánto puede durar como máximo el periodo de prueba de un ingeniero titulado?
+  answer: Seis meses.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 14"
+      quote: la duración del periodo de prueba no podrá exceder de seis meses para los técnicos titulados
+
+- id: boe-004
+  question: Trabajo de dependiente en una tienda con 15 empleados. ¿Cuánto puede durar mi periodo de prueba si el convenio no fija nada?
+  answer: Tres meses como máximo, por ser una empresa de menos de veinticinco trabajadores y no ser técnico titulado.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 14"
+      quote: En las empresas de menos de veinticinco trabajadores el periodo de prueba no podrá exceder de tres meses para los trabajadores que no sean técnicos titulados.
+
+- id: boe-005
+  question: ¿Cuántos días de vacaciones me corresponden como mínimo al año?
+  answer: Treinta días naturales.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 38"
+      quote: En ningún caso la duración será inferior a treinta días naturales.
+
+- id: boe-006
+  question: ¿Con cuánto tiempo de antelación tiene la empresa que decirme cuándo son mis vacaciones?
+  answer: Al menos dos meses antes del comienzo del disfrute.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 38"
+      quote: El trabajador conocerá las fechas que le correspondan dos meses antes, al menos, del comienzo del disfrute.
+
+- id: boe-007
+  question: ¿Cuántas horas a la semana se puede trabajar como máximo en jornada ordinaria?
+  answer: Cuarenta horas semanales de trabajo efectivo de promedio en cómputo anual.
+  type: numeric
+  evidence:
+    - ref: "ET: Artículo 34"
+      quote: La duración máxima de la jornada ordinaria de trabajo será de cuarenta horas semanales de trabajo efectivo de promedio en cómputo anual.
+
+- id: boe-008
+  question: ¿Cuánto descanso tiene que haber entre que salgo de trabajar y vuelvo a entrar al día siguiente?
+  answer: Como mínimo doce horas.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 34"
+      quote: Entre el final de una jornada y el comienzo de la siguiente mediarán, como mínimo, doce horas.
+
+- id: boe-009
+  question: Si el juez declara improcedente mi despido y la empresa no me readmite, ¿cuánto me tiene que pagar?
+  answer: Una indemnización de treinta y tres días de salario por año de servicio, con un máximo de veinticuatro mensualidades.
+  type: distractor
+  notes: La disposición transitoria undécima conserva los 45 días por año para el tiempo anterior al 12 de febrero de 2012.
+  evidence:
+    - ref: "ET: Artículo 56"
+      quote: una indemnización equivalente a treinta y tres días de salario por año de servicio, prorrateándose por meses los periodos de tiempo inferiores a un año, hasta un máximo de veinticuatro mensualidades
+
+- id: boe-010
+  question: ¿Qué indemnización me corresponde si me despiden por causas objetivas?
+  answer: Veinte días de salario por año de servicio, con un máximo de doce mensualidades.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 53"
+      quote: la indemnización de veinte días por año de servicio, prorrateándose por meses los periodos de tiempo inferiores a un año y con un máximo de doce mensualidades
+
+- id: boe-011
+  question: ¿Con cuántos días de preaviso me tienen que comunicar un despido objetivo?
+  answer: Quince días, contados desde la entrega de la comunicación personal.
+  type: lookup
+  evidence:
+    - ref: "ET: Artículo 53"
+      quote: Concesión de un plazo de preaviso de quince días
+
+- id: boe-012
+  question: ¿Cuántas semanas de permiso tiene el padre por el nacimiento de un hijo?
+  answer: Diecinueve semanas de suspensión del contrato, igual que la madre biológica.
+  type: distractor
+  notes: La disposición transitoria del ET describe la implantación gradual con 8 y 12 semanas, ya superada.
+  evidence:
+    - ref: "ET: Artículo 48"
+      quote: suspenderá el contrato de trabajo de la madre biológica y el del progenitor distinto de la madre biológica durante diecinueve semanas
+
+- id: boe-013
+  question: Tengo un contrato indefinido desde 2009 y me han despedido de forma improcedente. ¿Cómo se calcula la indemnización?
+  answer: A razón de 45 días por año por el tiempo trabajado antes del 12 de febrero de 2012 y de 33 días por año por el tiempo posterior, con los topes de la disposición transitoria undécima.
+  type: multi_evidence
+  evidence:
+    - ref: "ET: Disposición transitoria undécima"
+      quote: La indemnización por despido improcedente de los contratos formalizados con anterioridad al 12 de febrero de 2012 se calculará a razón de cuarenta y cinco días de salario por año de servicio
+    - ref: "ET: Artículo 56"
+      quote: una indemnización equivalente a treinta y tres días de salario por año de servicio
+
+- id: boe-014
+  question: ¿Qué dice el artículo 27 del Estatuto de los Trabajadores sobre quién fija el salario mínimo?
+  answer: Lo fija el Gobierno anualmente, previa consulta con las organizaciones sindicales y asociaciones empresariales más representativas.
+  type: exact_reference
+  evidence:
+    - ref: "ET: Artículo 27"
+      quote: El Gobierno fijará, previa consulta con las organizaciones sindicales y asociaciones empresariales más representativas, anualmente, el salario mínimo interprofesional
+
+# --- Arrendamientos Urbanos -----------------------------------------------------------------
+
+- id: boe-015
+  question: Si alquilo un piso a una empresa, ¿cuántos años dura como mínimo el contrato?
+  answer: Siete años, por ser el arrendador persona jurídica (cinco si fuera persona física), mediante prórrogas anuales obligatorias.
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 9"
+      quote: hasta que el arrendamiento alcance una duración mínima de cinco años, o de siete años si el arrendador fuese persona jurídica
+
+- id: boe-016
+  question: Llevo ocho meses de alquiler y me quiero ir. ¿Puedo dejar el piso? ¿Con cuánto aviso?
+  answer: Sí, porque han pasado al menos seis meses; hay que avisar al arrendador con al menos treinta días de antelación.
+  type: distractor
+  notes: El desistimiento de consumidores (TRLGDCU) es otra figura con plazos distintos.
+  evidence:
+    - ref: "LAU: Artículo 11"
+      quote: El arrendatario podrá desistir del contrato de arrendamiento, una vez que hayan transcurrido al menos seis meses, siempre que se lo comunique al arrendador con una antelación mínima de treinta días.
+
+- id: boe-017
+  question: ¿Cuánta fianza me pueden exigir al alquilar una vivienda?
+  answer: Una mensualidad de renta en metálico.
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 36"
+      quote: fianza en metálico en cantidad equivalente a una mensualidad de renta en el arrendamiento de viviendas
+
+- id: boe-018
+  question: ¿Y si lo que alquilo es un local para un negocio, cuánta fianza es obligatoria?
+  answer: Dos mensualidades de renta.
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 36"
+      quote: de dos en el arrendamiento para uso distinto del de vivienda
+
+- id: boe-019
+  question: El casero va a hacer obras de reparación en mi piso que durarán un mes y no podré usar una habitación. ¿Me tienen que bajar el alquiler?
+  answer: Sí; si la obra dura más de veinte días, la renta se reduce en proporción a la parte de la vivienda de la que se vea privado.
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 21"
+      quote: Si la obra durase más de veinte días, habrá de disminuirse la renta en proporción a la parte de la vivienda de la que el arrendatario se vea privado.
+
+- id: boe-020
+  question: En mi contrato de alquiler no pone nada sobre actualizar la renta. ¿Me la pueden subir cada año con el IPC?
+  answer: No; en defecto de pacto expreso no se aplica actualización de la renta.
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 18"
+      quote: En defecto de pacto expreso, no se aplicará actualización de rentas a los contratos.
+
+- id: boe-021
+  question: Pasados los cinco años de alquiler, ¿con cuánta antelación tiene que avisar el propietario si no quiere renovar?
+  answer: Al menos con seis meses de antelación a la fecha de vencimiento (el inquilino, con dos meses).
+  type: lookup
+  evidence:
+    - ref: "LAU: Artículo 10"
+      quote: al menos con seis meses de antelación a aquella fecha en el caso del arrendador
+
+# --- Consumidores -----------------------------------------------------------------------------
+
+- id: boe-022
+  question: ¿Cuántos días tengo para devolver algo que he comprado por internet sin dar explicaciones?
+  answer: Catorce días naturales.
+  type: lookup
+  notes: >-
+    v2: added the model withdrawal form of Annex I as an alternative; it states the period
+    too and was missed in v1 (found in the error analysis of retrieval run seed-v1).
+  evidence:
+    - ref: "TRLGDCU: Artículo 71"
+      quote: El consumidor y usuario dispondrá de un plazo mínimo de catorce días naturales para ejercer el derecho de desistimiento.
+      alternatives:
+        - ref: "TRLGDCU: Artículo 104"
+          quote: el plazo de desistimiento concluirá a los catorce días naturales
+        - ref: "TRLGDCU#ai"
+          quote: Tiene usted derecho a desistir del presente contrato en un plazo de catorce/treinta (*) días naturales sin necesidad de justificación.
+
+- id: boe-023
+  question: Un comercial vino a mi casa sin que lo llamara y me vendió un purificador. ¿Tengo más plazo para echarme atrás?
+  answer: Sí, en las visitas no solicitadas al domicilio el plazo de desistimiento se amplía a treinta días naturales.
+  type: lookup
+  evidence:
+    - ref: "TRLGDCU: Artículo 102"
+      quote: el plazo de desistimiento se amplía a treinta días naturales
+
+- id: boe-024
+  question: Compré una lavadora hace dos años y ha dejado de funcionar. ¿Sigue respondiendo el vendedor?
+  answer: Sí; el vendedor responde de las faltas de conformidad que se manifiesten en un plazo de tres años desde la entrega.
+  type: lookup
+  evidence:
+    - ref: "TRLGDCU: Artículo 120"
+      quote: el empresario será responsable de las faltas de conformidad que existan en el momento de la entrega o del suministro y se manifiesten en un plazo de tres años
+
+# --- Procedimiento administrativo ---------------------------------------------------------------
+
+- id: boe-025
+  question: ¿Qué plazo tengo para presentar un recurso de alzada contra una resolución expresa?
+  answer: Un mes.
+  type: distractor
+  notes: El recurso de reposición tiene un artículo casi idéntico (art. 124).
+  evidence:
+    - ref: "LPAC: Artículo 122"
+      quote: El plazo para la interposición del recurso de alzada será de un mes, si el acto fuera expreso.
+
+- id: boe-026
+  question: Presenté un recurso de reposición. ¿Cuánto tiempo tiene la Administración para resolverlo?
+  answer: Un mes.
+  type: distractor
+  notes: Para el recurso de alzada el plazo de resolución es de tres meses (art. 122.2).
+  evidence:
+    - ref: "LPAC: Artículo 124"
+      quote: El plazo máximo para dictar y notificar la resolución del recurso será de un mes.
+
+- id: boe-027
+  question: En un plazo administrativo de diez días, ¿cuentan los sábados?
+  answer: No; los plazos por días son hábiles y se excluyen los sábados, domingos y festivos.
+  type: lookup
+  evidence:
+    - ref: "LPAC: Artículo 30"
+      quote: excluyéndose del cómputo los sábados, los domingos y los declarados festivos
+
+- id: boe-028
+  question: Si la norma de un procedimiento no dice en cuánto tiempo hay que resolver, ¿de cuánto es el plazo?
+  answer: De tres meses.
+  type: lookup
+  evidence:
+    - ref: "LPAC: Artículo 21"
+      quote: Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses.
+
+- id: boe-029
+  question: Según el artículo 24 de la Ley 39/2015, ¿qué ocurre si la Administración no contesta a tiempo a una solicitud mía?
+  answer: El vencimiento del plazo sin resolución expresa legitima al interesado para entender estimada (o, en los casos previstos, desestimada) su solicitud por silencio administrativo.
+  type: exact_reference
+  evidence:
+    - ref: "LPAC: Artículo 24"
+      quote: el vencimiento del plazo máximo sin haberse notificado resolución expresa, legitima al interesado
+
+- id: boe-030
+  question: Llega una notificación de Hacienda a casa y yo no estoy. ¿Quién puede recogerla?
+  answer: Cualquier persona mayor de catorce años que esté en el domicilio y haga constar su identidad.
+  type: distractor
+  notes: Los "catorce años" también aparecen en la LOPDGDD (consentimiento de menores).
+  evidence:
+    - ref: "LPAC: Artículo 42"
+      quote: podrá hacerse cargo de la misma cualquier persona mayor de catorce años que se encuentre en el domicilio y haga constar su identidad
+
+# --- IRPF ---------------------------------------------------------------------------------------
+
+- id: boe-031
+  question: ¿Qué tipo de la escala estatal del IRPF se aplica a la base liquidable general que supera los 300.000 euros?
+  answer: El 24,50 %.
+  type: numeric
+  notes: Las escalas de retención y de no residentes (arts. 66, 76, 93, 101) tienen filas casi idénticas con otros tipos.
+  evidence:
+    - ref: "LIRPF: Artículo 63"
+      quote: 300.000,00 | 62.950,75 | En adelante | 24,50
+
+- id: boe-032
+  question: ¿Cuál es el mínimo personal del contribuyente en el IRPF?
+  answer: 5.550 euros anuales con carácter general.
+  type: numeric
+  evidence:
+    - ref: "LIRPF: Artículo 57"
+      quote: El mínimo del contribuyente será, con carácter general, de 5.550 euros anuales.
+
+- id: boe-033
+  question: ¿Cuánto me puedo deducir en la renta como gastos genéricos por cobrar un sueldo?
+  answer: 2.000 euros anuales en concepto de otros gastos.
+  type: numeric
+  evidence:
+    - ref: "LIRPF: Artículo 19"
+      quote: En concepto de otros gastos distintos de los anteriores, 2.000 euros anuales.
+
+- id: boe-034
+  question: Me han tocado 30.000 euros en la Lotería de Navidad. ¿Tengo que pagar impuestos?
+  answer: No; los premios de hasta 40.000 euros están exentos del gravamen especial.
+  type: distractor
+  notes: Los 40.000 euros también aparecen en la prescripción de sanciones de la LOPDGDD.
+  evidence:
+    - ref: "LIRPF: Disposición adicional trigésima tercera"
+      quote: Estarán exentos del gravamen especial los premios cuyo importe íntegro sea igual o inferior a 40.000 euros.
+
+- id: boe-035
+  question: La indemnización por despido, ¿tributa en el IRPF?
+  answer: Está exenta en la cuantía obligatoria según el Estatuto de los Trabajadores, con un límite de 180.000 euros.
+  type: multi_evidence
+  evidence:
+    - ref: "LIRPF: Artículo 7"
+      quote: Las indemnizaciones por despido o cese del trabajador, en la cuantía establecida con carácter obligatorio en el texto refundido de la Ley del Estatuto de los Trabajadores
+    - ref: "LIRPF: Artículo 7"
+      quote: El importe de la indemnización exenta a que se refiere esta letra tendrá como límite la cantidad de 180.000 euros.
+
+# --- Protección de datos ------------------------------------------------------------------------
+
+- id: boe-036
+  question: ¿A partir de qué edad puede un menor consentir por sí mismo que traten sus datos personales?
+  answer: A partir de los catorce años (por debajo, hace falta el consentimiento de los padres o tutores).
+  type: lookup
+  evidence:
+    - ref: "LOPDGDD: Artículo 7"
+      quote: El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de catorce años.
+
+- id: boe-037
+  question: ¿Cuánto tiempo puede guardar una comunidad de vecinos las grabaciones de sus cámaras de seguridad?
+  answer: Un mes como máximo desde su captación, salvo que deban conservarse para acreditar actos contra personas o bienes.
+  type: lookup
+  evidence:
+    - ref: "LOPDGDD: Artículo 22"
+      quote: Los datos serán suprimidos en el plazo máximo de un mes desde su captación
+
+- id: boe-038
+  question: ¿Qué tiene que hacer la empresa para garantizar que los empleados no contesten correos fuera de su horario?
+  answer: Elaborar, previa audiencia de los representantes de los trabajadores, una política interna sobre el derecho a la desconexión digital, con acciones de formación y sensibilización.
+  type: lookup
+  evidence:
+    - ref: "LOPDGDD: Artículo 88"
+      quote: El empleador, previa audiencia de los representantes de los trabajadores, elaborará una política interna dirigida a trabajadores
+
+- id: boe-039
+  question: ¿Cuándo prescribe una multa de protección de datos de 20.000 euros?
+  answer: Al año, porque las sanciones de hasta 40.000 euros prescriben en un año.
+  type: distractor
+  notes: Los 40.000 euros también aparecen en la exención de premios de lotería del IRPF.
+  evidence:
+    - ref: "LOPDGDD: Artículo 78"
+      quote: Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de un año.
+
+# --- Unanswerable -------------------------------------------------------------------------------
+
+- id: boe-040
+  question: ¿Cuál es el importe del salario mínimo interprofesional en 2026?
+  answer: UNANSWERABLE
+  type: unanswerable
+  notes: El art. 27 del ET dice que lo fija el Gobierno, pero la cuantía está en un real decreto que no forma parte del corpus.
+
+- id: boe-041
+  question: ¿Hasta qué día se puede presentar la declaración de la renta?
+  answer: UNANSWERABLE
+  type: unanswerable
+  notes: La LIRPF remite los plazos a una orden ministerial que no forma parte del corpus.
+
+- id: boe-042
+  question: ¿Cuánto dura como máximo una baja por incapacidad temporal?
+  answer: UNANSWERABLE
+  type: unanswerable
+  notes: Lo regula la Ley General de la Seguridad Social, que no forma parte del corpus.
+
+- id: boe-043
+  question: ¿Cuál es el tipo general del IVA en España?
+  answer: UNANSWERABLE
+  type: unanswerable
+  notes: La Ley del IVA no forma parte del corpus.

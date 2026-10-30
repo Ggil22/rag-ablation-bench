@@ -1,0 +1,26 @@
+# docker compose up --build
+# API keys are read from .env. Set LANGFUSE_PUBLIC_KEY / LANGFUSE_SECRET_KEY (and
+# LANGFUSE_HOST for a self-hosted instance) there to send traces to Langfuse.
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file: .env
+    environment:
+      RAB_PIPELINE: ${RAB_PIPELINE:-}
+      RAB_REQUEST_LOG: /app/logs/requests.jsonl
+    volumes:
+      - models:/models                      # Hugging Face downloads, kept across rebuilds
+      - ./.cache/embeddings:/app/.cache/embeddings
+      - ./logs:/app/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  models:
